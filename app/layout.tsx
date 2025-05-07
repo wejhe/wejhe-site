@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
-import { GeistSans } from 'geist/font/sans'
-import { GeistMono } from 'geist/font/mono'
 import "./globals.css";
+import { Inter } from 'next/font/google';
+import Navbar from '@/app/components/navbar';
+
+export const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: "Wejhe – Software Developer",
@@ -17,8 +19,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable} antialiased`}>
+    <html lang="en" className={`${inter.className} antialiased`}>
       <body>
+        <Navbar />
         {children}
       </body>
     </html>

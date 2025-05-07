@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import clsx from "clsx";
 import NavLinks from "./navlinks";
 import NavButtons from "./navbuttons";
 

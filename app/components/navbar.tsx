@@ -3,8 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import clsx from "clsx";
-import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 const menus = [
   { name: "About", href: "/about" },

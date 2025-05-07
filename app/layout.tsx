@@ -3,7 +3,7 @@ import "./global.css";
 import { Inter } from "next/font/google";
 import Navbar from "@/app/components/navbar/navbar";
 
-export const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Wejhe – Software Developer",

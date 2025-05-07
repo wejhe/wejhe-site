@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import clsx from 'clsx';
+import clsx from "clsx";
 
 const menus = [
   { name: "About", href: "/about" },
@@ -43,13 +43,12 @@ export default function Navbar() {
               <Link
                 key={button.name}
                 href={button.href}
-                className={clsx(
-                  "py-1 px-3 rounded-[6px] text-[14px]",
-                  {
-                    "bg-white text-black font-semibold border border-white": button.type === "primary",
-                    "bg-block-gray text-white border border-stroke-gray": button.type === "secondary",
-                  }
-                )}
+                className={clsx("py-1 px-3 rounded-[6px] text-[14px]", {
+                  "bg-white text-black font-semibold border border-white":
+                    button.type === "primary",
+                  "bg-block-gray text-white border border-stroke-gray":
+                    button.type === "secondary",
+                })}
               >
                 {button.name}
               </Link>

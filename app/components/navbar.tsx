@@ -14,7 +14,7 @@ const menus = [
 
 const buttons = [
   { name: "Give Feedback", href: "/feedback", type: "secondary" },
-  { name: "Get in Touch", href: "/contact", type: "primary" },
+  { name: "Get in Touch", href: "/consult", type: "primary" },
 ];
 
 export default function Navbar() {

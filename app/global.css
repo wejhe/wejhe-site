@@ -2,10 +2,13 @@
 
 @theme {
   --color-black: #000000;
-  --color-white: #FAFAFA;
+  --color-white: #fafafa;
+  --color-white-hover: #dddddd;
   --color-textual-gray: #808080;
   --color-block-gray: #303030;
+  --color-block-gray-hover: #404040;
   --color-stroke-gray: #404040;
+  --color-link-blue: #52a8ff;
 }
 
 body {

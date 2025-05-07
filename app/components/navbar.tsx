@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import clsx from "clsx";
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 const menus = [
   { name: "About", href: "/about" },
@@ -18,7 +19,12 @@ const buttons = [
 ];
 
 export default function Navbar() {
-  const pathname = usePathname();
+  const currentPath = usePathname();
+  const [pathname, setPathname] = useState("");
+
+  useEffect(() => {
+    setPathname(currentPath);
+  }, [currentPath]);
 
   const getMenuClass = (href: string) =>
     clsx(
@@ -30,9 +36,9 @@ export default function Navbar() {
 
   const getButtonClass = (type: string) =>
     clsx("py-1 px-3 rounded-[6px] text-[14px]", {
-      "bg-white text-black font-semibold border border-white":
+      "bg-white text-black font-semibold border border-white hover:bg-white-hover":
         type === "primary",
-      "bg-block-gray text-white border border-stroke-gray":
+      "bg-block-gray text-white border border-stroke-gray hover:bg-block-gray-hover":
         type === "secondary",
     });
 
@@ -43,15 +49,16 @@ export default function Navbar() {
           <Link href="/">
             <Image src="/logo.svg" width={40} height={24} alt="Logo of Wejhe" />
           </Link>
-          {menus.map((menu) => (
-            <Link
-              key={menu.name}
-              href={menu.href}
-              className={getMenuClass(menu.href)}
-            >
-              {menu.name}
-            </Link>
-          ))}
+          {pathname &&
+            menus.map((menu) => (
+              <Link
+                key={menu.name}
+                href={menu.href}
+                className={getMenuClass(menu.href)}
+              >
+                {menu.name}
+              </Link>
+            ))}
         </div>
         <div className="flex gap-[16px] w-fit">
           {buttons.map((button) => (

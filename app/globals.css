@@ -1,9 +1,15 @@
-:root {
-  --background: #000000;
-  --foreground: #FAFAFA;
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-black: #000000;
+  --color-white: #FAFAFA;
+  --color-textual-gray: #808080;
+  --color-block-gray: #303030;
+  --color-stroke-gray: #404040;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  @apply bg-black text-white;
 }

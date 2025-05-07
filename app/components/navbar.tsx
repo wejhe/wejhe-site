@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import clsx from "clsx";
+import { usePathname } from "next/navigation";
 
 const menus = [
   { name: "About", href: "/about" },
@@ -15,45 +18,51 @@ const buttons = [
 ];
 
 export default function Navbar() {
+  const pathname = usePathname();
+
+  const getMenuClass = (href: string) =>
+    clsx(
+      "text-[16px]",
+      pathname === href
+        ? "text-white hover:text-white"
+        : "text-textual-gray hover:text-link-blue"
+    );
+
+  const getButtonClass = (type: string) =>
+    clsx("py-1 px-3 rounded-[6px] text-[14px]", {
+      "bg-white text-black font-semibold border border-white":
+        type === "primary",
+      "bg-block-gray text-white border border-stroke-gray":
+        type === "secondary",
+    });
+
   return (
     <nav className="w-full h-16 border-b border-stroke-gray">
       <div className="flex justify-between items-center w-full h-full px-[80px]">
         <div className="flex gap-[64px] w-fit">
-          <Image
-            src="/logo.svg"
-            width={40}
-            height={24}
-            alt="Screenshots of the dashboard project showing desktop version"
-          />
-          {menus.map((menu) => {
-            return (
-              <Link
-                key={menu.name}
-                href={menu.href}
-                className="text-textual-gray text-[16px] hover:text-white"
-              >
-                {menu.name}
-              </Link>
-            );
-          })}
+          <Link href="/">
+            <Image src="/logo.svg" width={40} height={24} alt="Logo of Wejhe" />
+          </Link>
+          {menus.map((menu) => (
+            <Link
+              key={menu.name}
+              href={menu.href}
+              className={getMenuClass(menu.href)}
+            >
+              {menu.name}
+            </Link>
+          ))}
         </div>
         <div className="flex gap-[16px] w-fit">
-          {buttons.map((button) => {
-            return (
-              <Link
-                key={button.name}
-                href={button.href}
-                className={clsx("py-1 px-3 rounded-[6px] text-[14px]", {
-                  "bg-white text-black font-semibold border border-white":
-                    button.type === "primary",
-                  "bg-block-gray text-white border border-stroke-gray":
-                    button.type === "secondary",
-                })}
-              >
-                {button.name}
-              </Link>
-            );
-          })}
+          {buttons.map((button) => (
+            <Link
+              key={button.name}
+              href={button.href}
+              className={getButtonClass(button.type)}
+            >
+              {button.name}
+            </Link>
+          ))}
         </div>
       </div>
     </nav>

@@ -12,7 +12,7 @@ export default function Hero() {
         </div>
         <div className="flex flex-col items-center gap-[24px]">
           <h1 className="text-white text-center font-bold text-[64px]">
-            I'm a Software Developer
+            I&apos;m a Software Developer
           </h1>
           <p className="text-textual-gray text-center leading-[40px] text-[24px] w-[780px]">
             Crafting reliable, intuitive, and seamless{" "}

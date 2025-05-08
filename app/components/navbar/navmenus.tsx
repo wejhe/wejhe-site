@@ -12,7 +12,7 @@ const menus = [
   { name: "Blog", href: "/blog" },
 ];
 
-export default function NavLinks() {
+export default function NavMenus() {
   const currentPath = usePathname();
   const [pathname, setPathname] = useState("");
 

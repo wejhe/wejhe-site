@@ -1,7 +1,9 @@
+import Hero from "@/app/components/landing-page/hero/hero";
+
 export default function Page() {
   return (
-    <h1 className="text-white text-3xl font-bold text-center py-12">
-      Landing Page
-    </h1>
+    <div className="flex flex-col items-center gap-[160px] py-[80px]">
+      <Hero />
+    </div>
   );
 }

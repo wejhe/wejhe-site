@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import NavMenus from "./navmenus";
-import NavButtons from "./navbuttons";
+import NavMenus from "@/app/components/navbar/navmenus";
+import NavButtons from "@/app/components/navbar/navbuttons";
 
 export default function Navbar() {
   return (

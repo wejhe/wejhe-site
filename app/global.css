@@ -9,6 +9,12 @@
   --color-block-gray-hover: #303030;
   --color-stroke-gray: #303030;
   --color-link-blue: #52a8ff;
+
+  --spacing-navbar-height: 64px;
+  --spacing-body-padding-desktop: 80px;
+  --spacing-body-padding-mobile: 24px;
+  --spacing-lp-section-padding: 160px;
+  --spacing-lp-top-padding: 80px;
 }
 
 body {

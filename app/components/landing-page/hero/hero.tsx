@@ -24,17 +24,17 @@ export default function Hero() {
   );
 
   return (
-    <div className="flex flex-col items-center gap-[64px]">
-      <div className="flex flex-col items-center gap-[40px]">
-        <div className="flex items-center gap-[24px]">
+    <div className="flex flex-col items-center gap-[64px] w-full px-body-padding-desktop">
+      <div className="flex flex-col items-center gap-[40px] w-full">
+        <div className="flex items-center justify-center gap-[24px] w-full">
           {statuses.map((status) => (
             <HeroStatus key={status.icon} icon={status.icon}>
               {status.label}
             </HeroStatus>
           ))}
         </div>
-        <div className="flex flex-col items-center gap-[24px]">
-          <h1 className="text-white text-center font-bold text-[64px]">
+        <div className="flex flex-col items-center gap-[24px] w-full">
+          <h1 className="text-white text-center font-bold text-[64px] w-full">
             I&apos;m a Software Developer
           </h1>
           <p className="text-textual-gray text-center leading-[40px] text-[24px] w-[780px]">
@@ -42,7 +42,7 @@ export default function Hero() {
           </p>
         </div>
       </div>
-      <div className="flex items-center gap-[24px]">
+      <div className="flex items-center justify-center gap-[24px] w-full">
         {buttons.map((button) => (
           <Link key={button.label} href={button.href}>
             <LargeButton type={button.type}>{button.label}</LargeButton>

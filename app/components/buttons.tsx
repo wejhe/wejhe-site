@@ -1,10 +1,11 @@
 import clsx from "clsx";
+import { ButtonType } from "@/app/lib/definitions";
 
-export default function LargeButton({
+export function LargeButton({
   type,
   children,
 }: {
-  type: "primary" | "secondary";
+  type: ButtonType;
   children: React.ReactNode;
 }) {
   const getButtonClass = (type: string) =>
@@ -17,6 +18,24 @@ export default function LargeButton({
           type === "secondary",
       }
     );
+
+  return <button className={getButtonClass(type)}>{children}</button>;
+}
+
+export function NavButton({
+  type,
+  children,
+}: {
+  type: ButtonType;
+  children: React.ReactNode;
+}) {
+  const getButtonClass = (type: string) =>
+    clsx("py-1 px-3 rounded-[6px] text-[14px] cursor-pointer", {
+      "bg-white text-black font-semibold border border-white hover:bg-white-hover":
+        type === "primary",
+      "bg-block-gray text-white border border-stroke-gray hover:bg-block-gray-hover":
+        type === "secondary",
+    });
 
   return <button className={getButtonClass(type)}>{children}</button>;
 }

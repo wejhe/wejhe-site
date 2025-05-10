@@ -4,13 +4,7 @@ import Link from "next/link";
 import clsx from "clsx";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-
-const menus = [
-  { name: "About", href: "/about" },
-  { name: "Projects", href: "/projects" },
-  { name: "Services", href: "/services" },
-  { name: "Blog", href: "/blog" },
-];
+import { navmenus } from "@/app/lib/ui-constraints";
 
 export default function NavMenus() {
   const currentPath = usePathname();
@@ -22,7 +16,7 @@ export default function NavMenus() {
 
   const getMenuClass = (href: string) =>
     clsx(
-      "text-[16px]",
+      "hidden lg:block text-[16px]",
       pathname === href
         ? "text-white hover:text-white"
         : "text-textual-gray hover:text-link-blue"
@@ -30,7 +24,7 @@ export default function NavMenus() {
 
   return (
     pathname &&
-    menus.map((menu) => (
+    navmenus.map((menu) => (
       <Link
         key={menu.name}
         href={menu.href}

@@ -7,8 +7,8 @@ export default function Hero() {
     <div className="flex flex-col items-center gap-[64px]">
       <div className="flex flex-col items-center gap-[40px]">
         <div className="flex items-center gap-[24px]">
-          <HeroStatus icon="globe.svg" title="Jakarta, Indonesia" />
-          <HeroStatus icon="aperture.svg" title="Available for Projects" />
+          <HeroStatus icon="globe.svg">Jakarta, Indonesia</HeroStatus>
+          <HeroStatus icon="aperture.svg">Available for Projects</HeroStatus>
         </div>
         <div className="flex flex-col items-center gap-[24px]">
           <h1 className="text-white text-center font-bold text-[64px]">
@@ -26,10 +26,10 @@ export default function Hero() {
       </div>
       <div className="flex items-center gap-[24px]">
         <Link href="/consult">
-          <LargeButton type="primary" title="Consult a Project" />
+          <LargeButton type="primary">Consult a Project</LargeButton>
         </Link>
         <Link href="/blog">
-          <LargeButton type="secondary" title="Read Blog Posts" />
+          <LargeButton type="secondary">Read Blog Posts</LargeButton>
         </Link>
       </div>
     </div>

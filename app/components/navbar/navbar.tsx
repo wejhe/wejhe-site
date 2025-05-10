@@ -6,8 +6,8 @@ import NavMenusMobile from "@/app/components/navbar/navmenus-mobile";
 
 export default function Navbar() {
   return (
-    <nav className="bg-black w-full h-16 border-b border-stroke-gray sticky top-0">
-      <div className="flex justify-between items-center w-full h-full px-[24px] lg:px-[80px]">
+    <nav className="bg-black w-full h-navbar-height border-b border-stroke-gray sticky top-0">
+      <div className="flex justify-between items-center w-full h-full px-body-padding-mobile lg:px-body-padding-desktop">
         <div className="flex items-center gap-[64px] w-fit">
           <Link href="/">
             <Image src="/logo.svg" width={40} height={24} alt="Logo of Wejhe" />

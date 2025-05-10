@@ -21,7 +21,7 @@ export default function NavMenusMobile() {
 
   useEffect(() => {
     const updateHeight = () => {
-      setViewportHeight(window.innerHeight - 64);
+      setViewportHeight(window.innerHeight);
     };
 
     updateHeight();
@@ -65,8 +65,8 @@ export default function NavMenusMobile() {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
-            style={{ height: `${viewportHeight}px` }}
-            className="lg:hidden bg-black fixed top-16 right-0 w-[320px] px-[24px] py-[24px] border-l border-stroke-gray z-50"
+            style={{ height: `calc(${viewportHeight}px - var(--spacing-navbar-height))` }}
+            className="lg:hidden bg-black fixed top-16 right-0 w-[320px] px-body-padding-mobile py-body-padding-mobile border-l border-stroke-gray z-50"
           >
             <div className="h-full flex flex-col justify-between">
               <div className="flex flex-col gap-[24px] items-center">

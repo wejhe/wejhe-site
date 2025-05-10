@@ -44,7 +44,7 @@ export default function NavMenusMobile() {
       </div>
 
       {isMenuOpen && (
-        <div className="lg:hidden bg-black absolute top-16 left-0 w-full px-[40px] py-[24px] border-b border-stroke-gray">
+        <div className="lg:hidden bg-black absolute top-16 left-0 w-full px-[24px] py-[24px] border-b border-stroke-gray">
           <div className="flex flex-col gap-[24px] items-center">
             {pathname &&
               navmenus.map((menu) => (

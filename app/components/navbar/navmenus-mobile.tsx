@@ -13,10 +13,23 @@ export default function NavMenusMobile() {
   const currentPath = usePathname();
   const [pathname, setPathname] = useState("");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [viewportHeight, setViewportHeight] = useState(0);
 
   useEffect(() => {
     setPathname(currentPath);
   }, [currentPath]);
+
+  useEffect(() => {
+    const updateHeight = () => {
+      setViewportHeight(window.innerHeight - 64);
+    };
+
+    updateHeight();
+
+    window.addEventListener("resize", updateHeight);
+
+    return () => window.removeEventListener("resize", updateHeight);
+  }, []);
 
   const handleHamburgerClick = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -52,7 +65,7 @@ export default function NavMenusMobile() {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
-            style={{ height: "calc(100vh - 64px)" }}
+            style={{ height: `${viewportHeight}px` }}
             className="lg:hidden bg-black fixed top-16 right-0 w-[320px] px-[24px] py-[24px] border-l border-stroke-gray z-50"
           >
             <div className="h-full flex flex-col justify-between">

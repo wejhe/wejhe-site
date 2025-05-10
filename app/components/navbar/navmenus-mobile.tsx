@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { NavButtonMobile } from "@/app/components/buttons";
 import { navmenus, navbuttons } from "@/app/lib/ui-constraints";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function NavMenusMobile() {
   const currentPath = usePathname();
@@ -43,37 +44,49 @@ export default function NavMenusMobile() {
         />
       </div>
 
-      {isMenuOpen && (
-        <div className="lg:hidden bg-black absolute top-16 left-0 w-full px-[24px] py-[24px] border-b border-stroke-gray">
-          <div className="flex flex-col gap-[24px] items-center">
-            {pathname &&
-              navmenus.map((menu) => (
-                <Link
-                  key={menu.name}
-                  href={menu.href}
-                  onClick={() => setIsMenuOpen(false)}
-                  className={getMenuClass(menu.href)}
-                >
-                  {menu.name}
-                </Link>
-              ))}
-            <div className="flex flex-col gap-[16px] items-center w-full">
-              {navbuttons.map((button) => (
-                <Link
-                  key={button.label}
-                  href={button.href}
-                  onClick={() => setIsMenuOpen(false)}
-                  className="w-full"
-                >
-                  <NavButtonMobile type={button.type}>
-                    {button.label}
-                  </NavButtonMobile>
-                </Link>
-              ))}
+      <AnimatePresence>
+        {isMenuOpen && (
+          <motion.div
+            key="mobile-menu"
+            initial={{ x: "100%" }}
+            animate={{ x: 0 }}
+            exit={{ x: "100%" }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            style={{ height: "calc(100vh - 64px)" }}
+            className="lg:hidden bg-black fixed top-16 right-0 w-[320px] px-[24px] py-[24px] border-l border-stroke-gray z-50"
+          >
+            <div className="h-full flex flex-col justify-between">
+              <div className="flex flex-col gap-[24px] items-center">
+                {pathname &&
+                  navmenus.map((menu) => (
+                    <Link
+                      key={menu.name}
+                      href={menu.href}
+                      onClick={() => setIsMenuOpen(false)}
+                      className={getMenuClass(menu.href)}
+                    >
+                      {menu.name}
+                    </Link>
+                  ))}
+              </div>
+              <div className="flex flex-col gap-[16px] items-center w-full">
+                {navbuttons.map((button) => (
+                  <Link
+                    key={button.label}
+                    href={button.href}
+                    onClick={() => setIsMenuOpen(false)}
+                    className="w-full"
+                  >
+                    <NavButtonMobile type={button.type}>
+                      {button.label}
+                    </NavButtonMobile>
+                  </Link>
+                ))}
+              </div>
             </div>
-          </div>
-        </div>
-      )}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </>
   );
 }

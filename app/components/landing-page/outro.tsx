@@ -7,7 +7,7 @@ export default function Outro() {
     <div className="bg-gradient-to-b from-block-gray to-black flex flex-col items-center justify-center rounded-t-[64px] lg:rounded-t-[120px] gap-[64px] py-[80px] px-body-padding-mobile lg:px-body-padding-desktop w-full">
       <SectionTitle
         title="Transforming Possibility, Shaping Reality"
-        subtitle="Have an idea in mind? Let’s bring it to life now!"
+        subtitle="Have an idea in mind? Bring it to life!"
       />
       <Link
         key="Consult a Project"

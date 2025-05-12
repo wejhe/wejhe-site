@@ -14,7 +14,8 @@
   --spacing-body-padding-desktop: 80px;
   --spacing-body-padding-mobile: 24px;
   --spacing-lp-section-padding: 160px;
-  --spacing-lp-top-padding: 80px;
+  --spacing-lp-top-padding-desktop: 120px;
+  --spacing-lp-top-padding-mobile: 80px;
 }
 
 body {

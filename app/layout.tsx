@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./global.css";
 import { Inter } from "next/font/google";
 import Navbar from "@/app/components/navbar/navbar";
+import Footer from "@/app/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,9 +35,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.className} antialiased`}>
-      <body>
+      <body className="flex flex-col min-h-screen">
         <Navbar />
-        {children}
+        <div className="py-y-padding">
+          {children}
+        </div>
+        <Footer />
       </body>
     </html>
   );

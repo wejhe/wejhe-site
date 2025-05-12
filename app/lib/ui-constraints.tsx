@@ -26,19 +26,19 @@ export const techStack = [
   {
     title: "Frontend",
     subtitle: "Crafting beautiful UI",
-    firstImage: "nextjs.svg",
-    secondImage: "vuejs.svg",
+    firstImage: "nextjs.png",
+    secondImage: "vuejs.png",
   },
   {
     title: "Backend",
     subtitle: "Doing the business logic",
-    firstImage: "springboot.svg",
-    secondImage: "expressjs.svg",
+    firstImage: "springboot.png",
+    secondImage: "expressjs.png",
   },
   {
     title: "Database",
     subtitle: "Safely store the data",
-    firstImage: "mongodb.svg",
-    secondImage: "postgres.svg",
+    firstImage: "mongodb.png",
+    secondImage: "postgres.png",
   },
 ];

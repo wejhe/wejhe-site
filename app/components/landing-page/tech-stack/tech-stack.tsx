@@ -9,7 +9,7 @@ export default function TechStack() {
         title="Technology Stack"
         subtitle="My go-to tools for building production-ready web applications"
       />
-      <div className="flex items-center justify-center gap-[40px] w-full">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-[40px] w-full">
         {techStack.map((stack) => (
           <TechCard
             key={stack.title}

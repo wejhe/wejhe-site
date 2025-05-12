@@ -16,7 +16,7 @@ export default function TechCard({
       <div className="bg-gradient-to-b from-block-gray to-black flex flex-col items-center justify-center rounded-[16px] gap-[40px] py-[40px] w-full">
         <div className="flex flex-col text-center items-center justify-center gap-[4px] w-full">
           <strong className="text-white text-[24px] font-bold">{title}</strong>
-          <p className="text-textual-gray text-[24px]">{subtitle}</p>
+          <p className="text-textual-gray text-[20px]">{subtitle}</p>
         </div>
         <div className="flex flex-col text-center items-center justify-center w-full">
           <Image

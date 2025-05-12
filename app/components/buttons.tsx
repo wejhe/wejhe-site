@@ -10,7 +10,7 @@ export function LargeButton({
 }) {
   const getButtonClass = (type: string) =>
     clsx(
-      "flex items-center justify-center text-[20px] gap-[8px] py-[8px] px-[20px] rounded-[8px] cursor-pointer w-full",
+      "flex items-center justify-center text-[20px] gap-[8px] py-[8px] px-[20px] rounded-[8px] cursor-pointer w-full lg:w-auto",
       {
         "bg-white border border-white text-black font-semibold hover:bg-white-hover active:bg-white-hover":
           type === "primary",

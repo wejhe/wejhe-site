@@ -34,7 +34,7 @@ export default function Hero() {
       </div>
       <div className="flex flex-col lg:flex-row items-center justify-center gap-[16px] lg:gap-[24px] w-full">
         {heroButtons.map((button) => (
-          <Link key={button.label} href={button.href} className="w-full">
+          <Link key={button.label} href={button.href} className="w-full lg:w-auto">
             <LargeButton type={button.type}>{button.label}</LargeButton>
           </Link>
         ))}

@@ -21,3 +21,24 @@ export const heroButtons: ButtonConfig[] = [
   { href: "/consult", type: "primary", label: "Consult a Project" },
   { href: "/blog", type: "secondary", label: "Read Blog Posts" },
 ];
+
+export const techStack = [
+  {
+    title: "Frontend",
+    subtitle: "Crafting beautiful UI",
+    firstImage: "nextjs.svg",
+    secondImage: "vuejs.svg",
+  },
+  {
+    title: "Backend",
+    subtitle: "Doing the business logic",
+    firstImage: "springboot.svg",
+    secondImage: "expressjs.svg",
+  },
+  {
+    title: "Database",
+    subtitle: "Safely store the data",
+    firstImage: "mongodb.svg",
+    secondImage: "postgres.svg",
+  },
+];

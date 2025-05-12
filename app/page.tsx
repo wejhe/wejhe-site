@@ -3,7 +3,7 @@ import TechStack from "@/app/components/landing-page/tech-stack/tech-stack";
 
 export default function Page() {
   return (
-    <div className="flex flex-col items-center gap-lp-section-padding py-lp-top-padding-mobile lg:py-lp-top-padding-desktop w-full">
+    <div className="flex flex-col items-center gap-lp-section-padding py-lp-y-padding-mobile lg:py-lp-y-padding-desktop w-full">
       <Hero />
       <TechStack />
     </div>

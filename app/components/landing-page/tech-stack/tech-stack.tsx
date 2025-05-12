@@ -6,7 +6,7 @@ export default function TechStack() {
   return (
     <div className="flex flex-col items-center gap-[64px] w-full px-body-padding-mobile lg:px-body-padding-desktop">
       <SectionTitle
-        title="Customer Testimonials"
+        title="Technology Stack"
         subtitle="My go-to tools for building production-ready web applications"
       />
       <div className="flex items-center justify-center gap-[40px] w-full">

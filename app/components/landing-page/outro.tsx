@@ -1,4 +1,3 @@
-import Image from "next/image";
 import SectionTitle from "@/app/components/landing-page/section-title";
 import { LargeButton } from "@/app/components/buttons";
 import Link from "next/link";

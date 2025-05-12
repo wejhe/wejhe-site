@@ -1,6 +1,5 @@
 import HeroStatus from "@/app/components/landing-page/hero/hero-status";
 import { LargeButton } from "@/app/components/buttons";
-import { ButtonConfig } from "@/app/lib/definitions";
 import { heroStatuses, heroButtons } from "@/app/lib/ui-constraints";
 import Link from "next/link";
 

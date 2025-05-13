@@ -16,7 +16,35 @@ export const metadata: Metadata = {
   authors: [
     { name: "Wahyu Wijiyanto", url: "https://www.linkedin.com/in/wejhe/" },
   ],
-  keywords: ["react", "server components"],
+  keywords: [
+    "wahyu wijiyanto",
+    "wejhe",
+    "software developer",
+    "web developer",
+    "programmer",
+    "software development",
+    "web development",
+    "software engineer",
+    "software engineering",
+    "web design",
+    "web designer",
+    "information technology",
+    "technology",
+    "programming",
+    "coding",
+    "computer science",
+    "digital product",
+    "digital product design",
+    "IT project",
+    "IT development",
+    "web application",
+    "web app",
+    "application development",
+    "app development",
+    "application design",
+    "system design",
+    "system architecture",
+  ],
   openGraph: {
     type: "website",
     url: "https://wejhe.vercel.app/",
@@ -35,11 +63,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.className} antialiased`}>
-      <body className="flex flex-col min-h-screen">
+      <body className="flex flex-col min-h-[100dvh]">
         <Navbar />
-        <div className="py-y-padding">
-          {children}
-        </div>
+        <div className="py-y-padding">{children}</div>
         <Footer />
       </body>
     </html>

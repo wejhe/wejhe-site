@@ -63,7 +63,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.className} antialiased`}>
-      <body className="flex flex-col min-h-screen">
+      <body className="flex flex-col min-h-[100dvh]">
         <Navbar />
         <div className="py-y-padding">{children}</div>
         <Footer />

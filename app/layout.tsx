@@ -47,12 +47,12 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     type: "website",
-    url: "https://wejhe.vercel.app/",
+    url: "https://wejhe.co.id/",
     title: "Wejhe – Software Developer",
     description:
       "Crafting reliable, intuitive, and seamless web experiences for everyone with the power of cutting-edge technologies and human-centric design",
     siteName: "Wejhe – Software Developer",
-    images: [{ url: "https://wejhe.vercel.com/opengraph-image.png" }],
+    images: [{ url: "https://wejhe.co.id/opengraph-image.png" }],
   },
 };
 

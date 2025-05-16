@@ -5,6 +5,7 @@ import {
   popularPostsTitle,
   popularPostsSubtitle,
   popularPostsButtons,
+  popularPosts,
 } from "@/app/lib/ui-constraints";
 import Link from "next/link";
 
@@ -19,28 +20,26 @@ export default function PopularPosts() {
       </div>
       <div className="relative overflow-x-hidden w-full">
         <div className="animate-marquee inline-block whitespace-nowrap">
-          <PostCard />
-          <PostCard />
-          <PostCard />
-          <PostCard />
-          <PostCard />
-          <PostCard />
-          <PostCard />
-          <PostCard />
-          <PostCard />
-          <PostCard />
+          {popularPosts.map((post) => (
+            <PostCard
+              key={post.title}
+              title={post.title}
+              author={post.author}
+              timeToRead={post.timeToRead}
+              views={post.views}
+            />
+          ))}
         </div>
         <div className="absolute top-0 animate-marquee-duplicate inline-block whitespace-nowrap">
-          <PostCard />
-          <PostCard />
-          <PostCard />
-          <PostCard />
-          <PostCard />
-          <PostCard />
-          <PostCard />
-          <PostCard />
-          <PostCard />
-          <PostCard />
+          {popularPosts.map((post) => (
+            <PostCard
+              key={post.title}
+              title={post.title}
+              author={post.author}
+              timeToRead={post.timeToRead}
+              views={post.views}
+            />
+          ))}
         </div>
       </div>
       <div className="flex flex-col lg:flex-row items-center justify-center gap-[16px] lg:gap-[24px] px-body-padding-mobile lg:px-body-padding-desktop  w-full">

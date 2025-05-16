@@ -22,3 +22,29 @@
 body {
   @apply bg-black text-white tracking-[-0.5px];
 }
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee-duplicate {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 60s linear infinite;
+}
+
+.animate-marquee-duplicate {
+  animation: marquee-duplicate 60s linear infinite;
+}

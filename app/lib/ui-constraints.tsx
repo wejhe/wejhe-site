@@ -118,6 +118,16 @@ export const outroButton: ButtonConfig = {
   label: "Consult a Project",
 };
 
+export const popularPostsTitle = "Popular Blog Posts";
+
+export const popularPostsSubtitle =
+  "High quality articles discussing innovations and issues in the world of technology";
+
+export const popularPostsButtons: ButtonConfig[] = [
+  { href: "/blog", type: "primary", label: "Open Blog Page" },
+  { href: "/contribute", type: "secondary", label: "Write and Contribute" },
+];
+
 export const testimonialsTitle = "Customer Testimonials";
 
 export const testimonialsSubtitle =

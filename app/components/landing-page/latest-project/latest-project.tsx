@@ -1,8 +1,8 @@
 import { LargeButton } from "@/app/components/buttons";
 import Link from "next/link";
 import ProjectCard from "@/app/components/project-card";
-import SectionTitle from "@/app/components/landing-page/latest-project/section-title"
-import ProjectLongDescription from "@/app/components/landing-page/latest-project/project-long-description"
+import SectionTitle from "@/app/components/landing-page/latest-project/section-title";
+import ProjectLongDescription from "@/app/components/landing-page/latest-project/project-long-description";
 import { latestProject } from "@/app/lib/ui-constraints";
 
 export default function LatestProjects() {
@@ -28,6 +28,7 @@ export default function LatestProjects() {
           heightClass="h-auto"
           projectName={latestProject.projectName}
           projectDescription={latestProject.projectDescription}
+          projectImage={latestProject.image}
         />
       </div>
 
@@ -37,6 +38,7 @@ export default function LatestProjects() {
           heightClass="h-[400px]"
           projectName={latestProject.projectName}
           projectDescription={latestProject.projectDescription}
+          projectImage={latestProject.image}
         />
         <ProjectLongDescription
           description={latestProject.projectLongDescription}

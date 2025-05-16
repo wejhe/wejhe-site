@@ -107,3 +107,15 @@ export const serviceOfferingsButton: ButtonConfig = {
   type: "primary",
   label: "Explore All Services",
 };
+
+export const outroTitle = "Transforming Possibility, Shaping Reality";
+
+export const outroSubtitle = "Have an idea in mind? Bring it to life!";
+
+export const outroButton: ButtonConfig = {
+  href: "/consult",
+  type: "primary",
+  label: "Consult a Project",
+};
+
+export const copyright = "2025 Wahyu Wijiyanto";

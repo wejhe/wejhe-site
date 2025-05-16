@@ -125,25 +125,25 @@ export const testimonialsSubtitle =
 
 export const testimonials = [
   {
-    name: "Wahyu Wijiyanto",
-    role: "Bank Daya Guna",
+    name: "Satriyo Bagus P",
+    role: "Bank Syariah Indonesia",
     testimonial:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus enim eget nulla auctor volutpat. Habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
     image: "testi-1.png",
   },
   {
-    name: "Wahyu Wijigedang",
-    role: "Bank Daya Guna",
+    name: "Vernika Silviana",
+    role: "Ganesha Operation",
     testimonial:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus enim eget nulla auctor volutpat. Habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque finibus enim eget nulla auctor volutpat, consec adipiscing nurman lador elit.",
-    image: "testi-1.png",
+    image: "testi-2.png",
   },
   {
-    name: "Wahyu Wijidaya",
-    role: "Bank Daya Guna",
+    name: "Muhammad Imron",
+    role: "Bank Central Asia",
     testimonial:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus enim eget nulla auctor volutpat. Habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
-    image: "testi-1.png",
+    image: "testi-3.png",
   },
 ];
 

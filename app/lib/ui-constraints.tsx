@@ -17,10 +17,26 @@ export const heroStatuses = [
   { icon: "aperture.svg", label: "Available for Projects" },
 ];
 
+export const heroTitle = "I'm a Software Developer";
+
+export const heroSubtitle = (
+  <>
+    Crafting reliable, intuitive, and seamless{" "}
+    <strong className="text-white font-semibold">web experiences</strong> for
+    everyone with the power of cutting-edge technologies and human-centric
+    design
+  </>
+);
+
 export const heroButtons: ButtonConfig[] = [
   { href: "/consult", type: "primary", label: "Consult a Project" },
   { href: "/blog", type: "secondary", label: "Read Blog Posts" },
 ];
+
+export const techStackTitle = "Technology Stack";
+
+export const techStackSubtitle =
+  "My go-to tools for building production-ready web applications";
 
 export const techStack = [
   {
@@ -46,12 +62,18 @@ export const techStack = [
 export const latestProject = {
   sectionTitle: "Latest Project",
   projectName: "BSI Walled",
-  projectDescription: "Daily Financial Transaction Web App",
+  projectDescription: "Financial Transaction Web App",
   projectLongDescription:
     "BSI Walled is a wallet application that supports fund transfers and wallet top-ups, and is integrated with financial transaction tracking features that enable users to monitor income and expense summaries in real time across weekly, monthly, and quarterly periods",
   buttonLabel: "See More Projects",
   buttonHref: "/projects",
+  image: "/walled.png",
 };
+
+export const serviceOfferingsTitle = "Service Offerings";
+
+export const serviceOfferingsSubtitle =
+  "Exploring, shaping, and delivering digital solutions tailored to your unique needs";
 
 export const serviceOfferings = [
   {
@@ -79,3 +101,21 @@ export const serviceOfferings = [
     icon: "restfulapi.svg",
   },
 ];
+
+export const serviceOfferingsButton: ButtonConfig = {
+  href: "/services",
+  type: "primary",
+  label: "Explore All Services",
+};
+
+export const outroTitle = "Transforming Possibility, Shaping Reality";
+
+export const outroSubtitle = "Have an idea in mind? Bring it to life!";
+
+export const outroButton: ButtonConfig = {
+  href: "/consult",
+  type: "primary",
+  label: "Consult a Project",
+};
+
+export const copyright = "2025 Wahyu Wijiyanto";

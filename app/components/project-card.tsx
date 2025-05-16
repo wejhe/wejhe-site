@@ -4,10 +4,12 @@ export default function ProjectCard({
   heightClass,
   projectName,
   projectDescription,
+  projectImage,
 }: {
   heightClass: string;
   projectName: string;
   projectDescription: string;
+  projectImage: string;
 }) {
   return (
     <div
@@ -16,7 +18,10 @@ export default function ProjectCard({
         heightClass
       )}
     >
-      <div className="h-full rounded-t-[24px] bg-[url('/walled.png')] bg-cover bg-center"></div>
+      <div
+        className="h-full rounded-t-[24px] bg-cover bg-center"
+        style={{ backgroundImage: `url(${projectImage})` }}
+      ></div>
       <div className="flex flex-col text-left justify-center gap-[4px] px-[32px] py-[24px] w-full">
         <strong className="text-white text-[24px] font-bold">
           {projectName}

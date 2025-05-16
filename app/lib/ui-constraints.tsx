@@ -52,3 +52,30 @@ export const latestProject = {
   buttonLabel: "See More Projects",
   buttonHref: "/projects",
 };
+
+export const serviceOfferings = [
+  {
+    title: "Full Scale Web App",
+    subtitle:
+      "Build a fully functional mid-to-large scale web app natively or using OutSystems",
+    icon: "fullweb.svg",
+  },
+  {
+    title: "Simple Website",
+    subtitle:
+      "Build a simple website (e.g. Landing Page, Invitation) natively or using Framer",
+    icon: "simpleweb.svg",
+  },
+  {
+    title: "UI UX Design",
+    subtitle:
+      "Build an intuitive user interface design for web and mobile applications using Figma",
+    icon: "uiuxdesign.svg",
+  },
+  {
+    title: "RESTful API",
+    subtitle:
+      "Build a well documented RESTful API using Spring Boot Java or Express.js",
+    icon: "restfulapi.svg",
+  },
+];

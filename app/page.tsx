@@ -2,6 +2,7 @@ import Hero from "@/app/components/landing-page/hero/hero";
 import TechStack from "@/app/components/landing-page/tech-stack/tech-stack";
 import ServiceOfferings from "@/app/components/landing-page/service-offerings/service-offerings";
 import LatestProjects from "@/app/components/landing-page/latest-project/latest-project";
+import CustomerTestimonials from "@/app/components/landing-page/customer-testimonials/customer-testimonials";
 import Outro from "@/app/components/landing-page/outro";
 
 export default function Page() {
@@ -11,6 +12,7 @@ export default function Page() {
       <TechStack />
       <ServiceOfferings />
       <LatestProjects />
+      <CustomerTestimonials />
       <Outro />
     </div>
   );

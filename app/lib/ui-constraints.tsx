@@ -118,4 +118,33 @@ export const outroButton: ButtonConfig = {
   label: "Consult a Project",
 };
 
+export const testimonialsTitle = "Customer Testimonials";
+
+export const testimonialsSubtitle =
+  "Hear what clients say about the results and experiences we've built together";
+
+export const testimonials = [
+  {
+    name: "Wahyu Wijiyanto",
+    role: "Bank Daya Guna",
+    testimonial:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus enim eget nulla auctor volutpat. Habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+    image: "testi-1.png",
+  },
+  {
+    name: "Wahyu Wijigedang",
+    role: "Bank Daya Guna",
+    testimonial:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus enim eget nulla auctor volutpat. Habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque finibus enim eget nulla auctor volutpat, consec adipiscing nurman lador elit.",
+    image: "testi-1.png",
+  },
+  {
+    name: "Wahyu Wijidaya",
+    role: "Bank Daya Guna",
+    testimonial:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus enim eget nulla auctor volutpat. Habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+    image: "testi-1.png",
+  },
+];
+
 export const copyright = "2025 Wahyu Wijiyanto";

@@ -17,6 +17,17 @@ export const heroStatuses = [
   { icon: "aperture.svg", label: "Available for Projects" },
 ];
 
+export const heroTitle = "I'm a Software Developer";
+
+export const heroSubtitle = (
+  <>
+    Crafting reliable, intuitive, and seamless{" "}
+    <strong className="text-white font-semibold">web experiences</strong> for
+    everyone with the power of cutting-edge technologies and human-centric
+    design
+  </>
+);
+
 export const heroButtons: ButtonConfig[] = [
   { href: "/consult", type: "primary", label: "Consult a Project" },
   { href: "/blog", type: "secondary", label: "Read Blog Posts" },

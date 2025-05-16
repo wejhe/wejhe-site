@@ -69,6 +69,11 @@ export const latestProject = {
   buttonHref: "/projects",
 };
 
+export const serviceOfferingsTitle = "Service Offerings";
+
+export const serviceOfferingsSubtitle =
+  "Exploring, shaping, and delivering digital solutions tailored to your unique needs";
+
 export const serviceOfferings = [
   {
     title: "Full Scale Web App",
@@ -95,3 +100,9 @@ export const serviceOfferings = [
     icon: "restfulapi.svg",
   },
 ];
+
+export const serviceOfferingsButton: ButtonConfig = {
+  href: "/services",
+  type: "primary",
+  label: "Explore All Services",
+};

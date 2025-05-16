@@ -33,6 +33,11 @@ export const heroButtons: ButtonConfig[] = [
   { href: "/blog", type: "secondary", label: "Read Blog Posts" },
 ];
 
+export const techStackTitle = "Technology Stack";
+
+export const techStackSubtitle =
+  "My go-to tools for building production-ready web applications";
+
 export const techStack = [
   {
     title: "Frontend",

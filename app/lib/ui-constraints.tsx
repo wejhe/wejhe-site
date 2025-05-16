@@ -118,6 +118,79 @@ export const outroButton: ButtonConfig = {
   label: "Consult a Project",
 };
 
+export const popularPostsTitle = "Popular Blog Posts";
+
+export const popularPostsSubtitle =
+  "High quality articles discussing innovations and issues in the world of technology";
+
+export const popularPostsButtons: ButtonConfig[] = [
+  { href: "/blog", type: "primary", label: "Open Blog Page" },
+  { href: "/contribute", type: "secondary", label: "Write and Contribute" },
+];
+
+export const popularPosts = [
+  {
+    title: "Understanding State Management in React",
+    author: "Wahyu W",
+    timeToRead: 5,
+    views: 783,
+  },
+  {
+    title: "Building Reusable Components in Next.js",
+    author: "Wahyu W",
+    timeToRead: 7,
+    views: 654,
+  },
+  {
+    title: "A Guide to React Hooks: useEffect and useState",
+    author: "Wahyu W",
+    timeToRead: 6,
+    views: 912,
+  },
+  {
+    title: "How to Optimize Performance in React Apps",
+    author: "Wahyu W",
+    timeToRead: 8,
+    views: 1032,
+  },
+  {
+    title: "CSS Modules vs Tailwind CSS in-Depth-Review",
+    author: "Wahyu W",
+    timeToRead: 5,
+    views: 788,
+  },
+  {
+    title: "Deploying a Next.js App Easily on Vercel",
+    author: "Wahyu W",
+    timeToRead: 4,
+    views: 521,
+  },
+  {
+    title: "Getting Started with TypeScript in React",
+    author: "Wahyu W",
+    timeToRead: 6,
+    views: 689,
+  },
+  {
+    title: "Managing Your App's Global State with Zustand",
+    author: "Wahyu W",
+    timeToRead: 5,
+    views: 742,
+  },
+  {
+    title: "Dark Mode in Next.js Using Tailwind and Context",
+    author: "Wahyu W",
+    timeToRead: 6,
+    views: 837,
+  },
+  {
+    title: "Handling Forms Input in React the Easy Way",
+    author: "Wahyu W",
+    timeToRead: 5,
+    views: 910,
+  },
+];
+
 export const testimonialsTitle = "Customer Testimonials";
 
 export const testimonialsSubtitle =
@@ -125,25 +198,25 @@ export const testimonialsSubtitle =
 
 export const testimonials = [
   {
-    name: "Wahyu Wijiyanto",
-    role: "Bank Daya Guna",
+    name: "Satriyo Bagus P",
+    role: "Bank Syariah Indonesia",
     testimonial:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus enim eget nulla auctor volutpat. Habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
     image: "testi-1.png",
   },
   {
-    name: "Wahyu Wijigedang",
-    role: "Bank Daya Guna",
+    name: "Vernika Silviana",
+    role: "Ganesha Operation",
     testimonial:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus enim eget nulla auctor volutpat. Habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque finibus enim eget nulla auctor volutpat, consec adipiscing nurman lador elit.",
-    image: "testi-1.png",
+    image: "testi-2.png",
   },
   {
-    name: "Wahyu Wijidaya",
-    role: "Bank Daya Guna",
+    name: "Muhammad Imron",
+    role: "Bank Central Asia",
     testimonial:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus enim eget nulla auctor volutpat. Habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
-    image: "testi-1.png",
+    image: "testi-3.png",
   },
 ];
 

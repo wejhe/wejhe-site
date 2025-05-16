@@ -46,7 +46,7 @@ export const techStack = [
 export const latestProject = {
   sectionTitle: "Latest Project",
   projectName: "BSI Walled",
-  projectDescription: "Daily Financial Transaction Web App",
+  projectDescription: "Financial Transaction Web App",
   projectLongDescription:
     "BSI Walled is a wallet application that supports fund transfers and wallet top-ups, and is integrated with financial transaction tracking features that enable users to monitor income and expense summaries in real time across weekly, monthly, and quarterly periods",
   buttonLabel: "See More Projects",

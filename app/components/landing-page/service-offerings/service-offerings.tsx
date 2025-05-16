@@ -28,7 +28,7 @@ export default function ServiceOfferings() {
         href="/services"
         className="w-full lg:w-auto"
       >
-        <LargeButton type="primary">Explore More Services</LargeButton>
+        <LargeButton type="primary">Explore All Services</LargeButton>
       </Link>
     </div>
   );

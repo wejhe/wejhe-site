@@ -6,7 +6,7 @@ import NavMenusMobile from "@/app/components/navbar/navmenus-mobile";
 
 export default function Navbar() {
   return (
-    <nav className="bg-black w-full h-navbar-height border-b border-stroke-gray sticky top-0">
+    <nav className="bg-black w-full h-navbar-height border-b border-stroke-gray sticky top-0 z-50">
       <div className="flex justify-between items-center w-full h-full px-body-padding-mobile lg:px-body-padding-desktop">
         <div className="flex items-center gap-[64px] w-fit">
           <Link href="/">

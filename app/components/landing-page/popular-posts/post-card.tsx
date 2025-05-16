@@ -9,11 +9,11 @@ export default function PostCard() {
         </strong>
         <div className="flex gap-[12px] items-center justify-center w-full">
           <div className="flex items-center gap-[8px] py-[6px] pl-[10px] pr-[14px] rounded-[100px] bg-block-gray border border-stroke-gray text-white text-[14px]">
-            <Image src="/author.svg" width={16} height={16} alt="Globe Icon" />
+            <Image src="/author.svg" width={16} height={16} alt="Globe Icon" loading="eager" />
             <p className="text-center">Wahyu W</p>
           </div>
           <div className="flex items-center gap-[8px] py-[6px] pl-[10px] pr-[14px] rounded-[100px] bg-block-gray border border-stroke-gray text-white text-[14px]">
-            <Image src="/time.svg" width={16} height={16} alt="Globe Icon" />
+            <Image src="/time.svg" width={16} height={16} alt="Globe Icon" loading="eager" />
             <p className="text-center">5 min read</p>
           </div>
         </div>

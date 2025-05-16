@@ -12,7 +12,7 @@ import Link from "next/link";
 export default function ServiceOfferings() {
   return (
     <div className="flex flex-col items-center gap-[64px] w-full px-body-padding-mobile lg:px-0">
-      <div className="px-0 lg:px-body-padding-desktop">
+      <div className="px-body-padding-mobile lg:px-body-padding-desktop w-full">
         <SectionTitle
           title={serviceOfferingsTitle}
           subtitle={serviceOfferingsSubtitle}

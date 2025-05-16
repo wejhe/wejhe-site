@@ -1,23 +1,9 @@
 import { LargeButton } from "@/app/components/buttons";
 import Link from "next/link";
 import ProjectCard from "@/app/components/project-card";
+import SectionTitle from "@/app/components/landing-page/latest-project/section-title"
+import ProjectLongDescription from "@/app/components/landing-page/latest-project/project-long-description"
 import { latestProject } from "@/app/lib/ui-constraints";
-
-function SectionTitle({ title }: { title: string }) {
-  return (
-    <h2 className="text-white text-center lg:text-left font-bold text-[40px] w-full">
-      {title}
-    </h2>
-  );
-}
-
-function ProjectLongDescription({ description }: { description: string }) {
-  return (
-    <p className="text-textual-gray text-center lg:text-justify leading-[36px] lg:leading-[40px] text-[20px] lg:text-[24px] w-full">
-      {description}
-    </p>
-  );
-}
 
 export default function LatestProjects() {
   return (

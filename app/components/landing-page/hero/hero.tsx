@@ -1,4 +1,4 @@
-import HeroStatus from "@/app/components/landing-page/hero/hero-status";
+import { LargeTag } from "@/app/components/tags";
 import { LargeButton } from "@/app/components/buttons";
 import {
   heroStatuses,
@@ -14,9 +14,9 @@ export default function Hero() {
       <div className="flex flex-col items-center gap-[40px] w-full">
         <div className="flex flex-col lg:flex-row items-center justify-center gap-[16px] lg:gap-[24px] w-full">
           {heroStatuses.map((status) => (
-            <HeroStatus key={status.icon} icon={status.icon}>
+            <LargeTag key={status.icon} icon={status.icon}>
               {status.label}
-            </HeroStatus>
+            </LargeTag>
           ))}
         </div>
         <div className="flex flex-col items-center gap-[24px] w-full">

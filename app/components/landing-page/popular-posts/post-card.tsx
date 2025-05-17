@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { SmallTag } from "@/app/components/tags";
 
 export default function PostCard({
   title,
@@ -18,28 +19,10 @@ export default function PostCard({
           {title}
         </strong>
         <div className="flex gap-[12px] items-center justify-center w-full">
-          <div className="flex items-center gap-[8px] py-[6px] pl-[10px] pr-[14px] rounded-[100px] bg-block-gray border border-stroke-gray text-white text-[14px]">
-            <Image
-              src="/author.svg"
-              width={16}
-              height={16}
-              alt="Author Icon"
-              loading="eager"
-            />
-            <p className="text-center">{author}</p>
-          </div>
-          <div className="flex items-center gap-[8px] py-[6px] pl-[10px] pr-[14px] rounded-[100px] bg-block-gray border border-stroke-gray text-white text-[14px]">
-            <Image
-              src="/time.svg"
-              width={16}
-              height={16}
-              alt="Clock Icon"
-              loading="eager"
-            />
-            <p className="text-center">{timeToRead} min read</p>
-          </div>
+          <SmallTag icon="author.svg">{author}</SmallTag>
+          <SmallTag icon="time.svg">{timeToRead} min read</SmallTag>
         </div>
-        <div className="flex gap-[12px] items-center justify-center w-full">
+        <div className="flex gap-[8px] items-center justify-center w-full">
           <Image
             src="/view.svg"
             width={24}

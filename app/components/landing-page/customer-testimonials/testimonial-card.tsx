@@ -14,7 +14,7 @@ export default function TestimonialCard({
   return (
     <div className="h-auto flex flex-col items-center justify-center gap-[16px] lg:gap-[8px] w-full">
       <div className="flex flex-col h-full items-center lg:items-start">
-        <p className="bg-block-gray h-full text-justify text-textual-gray text-[20px] p-[24px] rounded-[24px] lg:rounded-bl-[0px] w-full">
+        <p className="bg-block-gray h-full text-center lg:text-justify text-textual-gray text-[20px] p-[24px] rounded-[24px] lg:rounded-bl-[0px] w-full">
           {testimonial}
         </p>
         <div className="hidden lg:block w-0 h-0 border-t-[24px] border-r-[24px] border-t-block-gray border-r-transparent" />

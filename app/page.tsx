@@ -4,7 +4,7 @@ import ServiceOfferings from "@/app/components/landing-page/service-offerings/se
 import LatestProjects from "@/app/components/landing-page/latest-project/latest-project";
 import PopularPosts from "@/app/components/landing-page/popular-posts/popular-posts";
 import CustomerTestimonials from "@/app/components/landing-page/customer-testimonials/customer-testimonials";
-import Outro from "@/app/components/landing-page/outro";
+import Outro from "@/app/components/landing-page/outro/outro";
 
 export default function Page() {
   return (

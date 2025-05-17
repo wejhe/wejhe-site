@@ -3,7 +3,7 @@ import Link from "next/link";
 import ProjectCard from "@/app/components/project-card";
 import SectionTitle from "@/app/components/landing-page/latest-project/section-title";
 import ProjectLongDescription from "@/app/components/landing-page/latest-project/project-long-description";
-import { latestProject } from "@/app/lib/ui-constraints";
+import { latestProject } from "@/app/libs/ui-data";
 
 export default function LatestProjects() {
   return (

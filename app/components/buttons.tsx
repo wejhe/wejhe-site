@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { ButtonType } from "@/app/lib/definitions";
+import { ButtonType } from "@/app/libs/definitions";
 
 export function LargeButton({
   type,

@@ -6,7 +6,7 @@ import {
   serviceOfferingsSubtitle,
   serviceOfferings,
   serviceOfferingsButton,
-} from "@/app/lib/ui-constraints";
+} from "@/app/libs/ui-data";
 import Link from "next/link";
 
 export default function ServiceOfferings() {

@@ -5,7 +5,7 @@ import {
   outroTitle,
   outroSubtitle,
   outroButton,
-} from "@/app/lib/ui-constraints";
+} from "@/app/libs/ui-data";
 
 export default function Outro() {
   return (

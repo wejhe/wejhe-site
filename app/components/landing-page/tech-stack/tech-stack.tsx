@@ -2,7 +2,7 @@ import {
   techStackTitle,
   techStackSubtitle,
   techStack,
-} from "@/app/lib/ui-constraints";
+} from "@/app/libs/ui-data";
 import SectionTitle from "@/app/components/landing-page/section-title";
 import TechCard from "@/app/components/landing-page/tech-stack/tech-card";
 

@@ -1,4 +1,4 @@
-import { ButtonConfig } from "@/app/lib/definitions";
+import { ButtonConfig } from "@/app/libs/definitions";
 
 export const navmenus = [
   { name: "About", href: "/about" },

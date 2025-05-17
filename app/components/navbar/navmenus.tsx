@@ -4,7 +4,7 @@ import Link from "next/link";
 import clsx from "clsx";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import { navmenus } from "@/app/lib/ui-constraints";
+import { navmenus } from "@/app/libs/ui-data";
 
 export default function NavMenus() {
   const currentPath = usePathname();

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { copyright } from "@/app/lib/ui-constraints";
+import { copyright } from "@/app/libs/ui-data";
 
 export default function Footer() {
   return (

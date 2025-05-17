@@ -201,14 +201,14 @@ export const testimonials = [
     name: "Satriyo Bagus P",
     role: "Bank Syariah Indonesia",
     testimonial:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus enim eget nulla auctor volutpat. Habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+      "Wejhe is a very reliable professional with exceptional adaptability. He consistently completes assigned tasks promptly and accurately. Working alongside him has been a truly enjoyable experience.",
     image: "testi-1.png",
   },
   {
     name: "Vernika Silviana",
     role: "Ganesha Operation",
     testimonial:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus enim eget nulla auctor volutpat. Habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque finibus enim eget nulla auctor volutpat, consec adipiscing nurman lador elit.",
+      "Just trust me, Wejhe is super quick to respond, which makes the whole process smooth and easy. What I really appreciate is how well he understands what I’m looking for. He always takes the time to get what I need, and the results always go beyond what I had in mind.",
     image: "testi-2.png",
   },
   {

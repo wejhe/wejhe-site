@@ -39,7 +39,7 @@ export default function PostCard({
             <p className="text-center">{timeToRead} min read</p>
           </div>
         </div>
-        <div className="flex gap-[12px] items-center justify-center w-full">
+        <div className="flex gap-[8px] items-center justify-center w-full">
           <Image
             src="/view.svg"
             width={24}

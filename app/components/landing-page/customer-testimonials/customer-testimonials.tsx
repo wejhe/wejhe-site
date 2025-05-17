@@ -2,7 +2,7 @@ import {
   testimonialsTitle,
   testimonialsSubtitle,
   testimonials,
-} from "@/app/lib/ui-constraints";
+} from "@/app/libs/ui-data";
 import SectionTitle from "@/app/components/landing-page/section-title";
 import TestimonialCard from "@/app/components/landing-page/customer-testimonials/testimonial-card";
 

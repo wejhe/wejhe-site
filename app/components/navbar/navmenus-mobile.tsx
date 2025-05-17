@@ -6,7 +6,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { NavButtonMobile } from "@/app/components/buttons";
-import { navmenus, navbuttons } from "@/app/lib/ui-constraints";
+import { navmenus, navbuttons } from "@/app/libs/ui-data";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function NavMenusMobile() {

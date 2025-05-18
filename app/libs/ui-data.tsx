@@ -31,7 +31,7 @@ export const heroSubtitle = (
 export const heroButton: ButtonConfig = {
   href: "/consult",
   type: "primary",
-  label: "Consult a Project",
+  label: "Consult",
 };
 
 export const techStackTitle = "Technology Stack";

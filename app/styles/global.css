@@ -49,3 +49,7 @@ body {
 .animate-marquee-duplicate {
   animation: marquee-duplicate 60s linear infinite;
 }
+
+.custom-focus-shadow:focus {
+  box-shadow: 0 0 0 3px var(--color-stroke-gray);
+}

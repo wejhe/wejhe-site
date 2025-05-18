@@ -28,10 +28,11 @@ export const heroSubtitle = (
   </>
 );
 
-export const heroButtons: ButtonConfig[] = [
-  { href: "/consult", type: "primary", label: "Consult a Project" },
-  { href: "/blog", type: "secondary", label: "Read Blog Posts" },
-];
+export const heroButton: ButtonConfig = {
+  href: "/consult",
+  type: "primary",
+  label: "Consult a Project",
+};
 
 export const techStackTitle = "Technology Stack";
 

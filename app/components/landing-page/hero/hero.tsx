@@ -20,7 +20,7 @@ export default function Hero() {
           ))}
         </div>
         <div className="flex flex-col items-center gap-[24px] w-full">
-          <h1 className="text-white text-center font-bold text-[64px] leading-[80px] lg:leading-normal w-full">
+          <h1 className="bg-gradient-to-r from-white to-textual-gray bg-clip-text text-transparent text-center font-bold text-[64px] leading-[80px] lg:leading-normal">
             {heroTitle}
           </h1>
           <p className="text-textual-gray text-center leading-[36px] lg:leading-[40px] text-[20px] lg:text-[24px] w-full lg:w-[780px]">

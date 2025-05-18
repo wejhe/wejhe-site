@@ -34,7 +34,7 @@ export default function Hero() {
           name="idea"
           type="text"
           placeholder="I want to build..."
-          className="custom-focus-shadow bg-black placeholder-textual-gray focus:text-white border border-stroke-gray rounded-[8px] py-[16px] pl-[50px] pr-[180px] text-[16px] h-auto hover:border-stroke-gray-hover focus:border-stroke-gray-hover outline-none w-full"
+          className="bg-black placeholder-textual-gray focus:text-white border border-stroke-gray rounded-[8px] py-[16px] pl-[50px] pr-[180px] text-[16px] h-auto hover:border-stroke-gray-hover focus:border-stroke-gray-hover focus:shadow-[0_0_0_3px_#303030] outline-none w-full"
         />
         <Image
           src="/idea.svg"

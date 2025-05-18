@@ -49,3 +49,8 @@ body {
 .animate-marquee-duplicate {
   animation: marquee-duplicate 60s linear infinite;
 }
+
+.no-webkit-appearance {
+  -webkit-appearance: none;
+  appearance: none;
+}

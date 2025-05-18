@@ -22,6 +22,24 @@ export function LargeButton({
   return <button className={getButtonClass(type)}>{children}</button>;
 }
 
+export function SmallButton({
+  type,
+  children,
+}: {
+  type: ButtonType;
+  children: React.ReactNode;
+}) {
+  const getButtonClass = (type: string) =>
+    clsx("py-[6px] px-[16px] rounded-[6px] text-[16px] cursor-pointer", {
+      "bg-white text-black font-semibold border border-white hover:bg-white-hover active:bg-white-hover":
+        type === "primary",
+      "bg-block-gray text-white border border-stroke-gray hover:bg-block-gray-hover active:bg-block-gray-hover":
+        type === "secondary",
+    });
+
+  return <button className={getButtonClass(type)}>{children}</button>;
+}
+
 export function NavButton({
   type,
   children,

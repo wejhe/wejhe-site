@@ -18,7 +18,7 @@ export default function ServiceOfferings() {
           subtitle={serviceOfferingsSubtitle}
         />
       </div>
-      <div className="flex flex-col lg:flex-row bg-block-gray rounded-[24px] lg:rounded-[0px] border-xy lg:border-y border-stroke-gray items-center justify-center lg:items-start gap-[64px] lg:gap-[40px] w-full py-[40px] px-body-padding-mobile lg:px-body-padding-desktop">
+      <div className="flex flex-col lg:flex-row bg-block-gray rounded-[24px] lg:rounded-[0px] border lg:border-x-0 border-stroke-gray items-center justify-center lg:items-start gap-[64px] lg:gap-[40px] w-full py-[40px] px-body-padding-mobile lg:px-body-padding-desktop">
         {serviceOfferings.map((service) => (
           <ServiceCard
             key={service.title}

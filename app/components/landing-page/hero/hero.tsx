@@ -8,6 +8,7 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import { SmallButton } from "@/app/components/buttons";
+import { AiFillPlayCircle } from "react-icons/ai";
 
 export default function Hero() {
   return (
@@ -29,27 +30,33 @@ export default function Hero() {
           </p>
         </div>
       </div>
-      <div className="relative flex items-center justify-center w-full lg:w-[640px]">
-        <input
-          name="idea"
-          type="text"
-          placeholder="I want to build..."
-          className="no-webkit-appearance bg-black placeholder-textual-gray focus:text-white border border-stroke-gray rounded-[8px] py-[16px] pl-[50px] pr-[180px] text-[16px] h-auto hover:border-stroke-gray-hover focus:border-stroke-gray-hover focus:shadow-[0_0_0_3px_var(--color-stroke-gray)] outline-none w-full"
-        />
-        <Image
-          src="/idea.svg"
-          width={24}
-          height={24}
-          alt="Idea Icon"
-          className="absolute left-[16px] top-1/2 -translate-y-1/2"
-        />
-        <Link
-          key={heroButton.label}
-          href={heroButton.href}
-          className="absolute right-[10px] top-1/2 -translate-y-1/2"
-        >
-          <SmallButton type={heroButton.type}>{heroButton.label}</SmallButton>
-        </Link>
+      <div className="flex flex-col gap-[16px] items-center justify-center w-full lg:w-[640px]">
+        <div className="relative flex items-center justify-center w-full">
+          <input
+            name="idea"
+            type="text"
+            placeholder="I want to build..."
+            className="no-webkit-appearance bg-black placeholder-textual-gray focus:text-white border border-stroke-gray rounded-[8px] py-[16px] pl-[50px] pr-[180px] text-[16px] h-auto hover:border-stroke-gray-hover focus:border-stroke-gray-hover focus:shadow-[0_0_0_3px_var(--color-stroke-gray)] outline-none w-full"
+          />
+          <Image
+            src="/idea.svg"
+            width={24}
+            height={24}
+            alt="Idea Icon"
+            className="absolute left-[16px] top-1/2 -translate-y-1/2"
+          />
+          <Link
+            key={heroButton.label}
+            href={heroButton.href}
+            className="absolute right-[10px] top-1/2 -translate-y-1/2"
+          >
+            <SmallButton type={heroButton.type}>{heroButton.label}</SmallButton>
+          </Link>
+        </div>
+        <div className="flex items-center justify-center gap-[6px] text-textual-gray text-[16px]">
+          <AiFillPlayCircle size={16} />
+          <p>Consult your idea to get started</p>
+        </div>
       </div>
     </div>
   );

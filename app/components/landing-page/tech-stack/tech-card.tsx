@@ -35,7 +35,7 @@ export default function TechCard({
         <Image
           src="/bg-globe.png"
           width={360}
-          height={360}
+          height={193}
           alt="Globe Background"
           className="absolute bottom-[-8px] z-1"
         />

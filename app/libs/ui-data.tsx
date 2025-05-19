@@ -9,7 +9,7 @@ export const navmenus = [
 
 export const navbuttons: ButtonConfig[] = [
   { href: "/feedback", type: "secondary", label: "Give Feedback" },
-  { href: "/consult", type: "primary", label: "Get in Touch" },
+  { href: "/login", type: "primary", label: "Login" },
 ];
 
 export const heroStatuses = [

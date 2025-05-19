@@ -37,7 +37,7 @@ export const heroButton: ButtonConfig = {
 export const techStackTitle = "Technology Stack";
 
 export const techStackSubtitle =
-  "My go-to tools for building production-ready web applications";
+  "My primary native tools for building production-ready web applications";
 
 export const techStack = [
   {

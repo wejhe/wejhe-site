@@ -9,7 +9,7 @@ export const navmenus = [
 
 export const navbuttons: ButtonConfig[] = [
   { href: "/feedback", type: "secondary", label: "Give Feedback" },
-  { href: "/consult", type: "primary", label: "Get in Touch" },
+  { href: "/login", type: "primary", label: "Login" },
 ];
 
 export const heroStatuses = [
@@ -37,7 +37,7 @@ export const heroButton: ButtonConfig = {
 export const techStackTitle = "Technology Stack";
 
 export const techStackSubtitle =
-  "My go-to tools for building production-ready web applications";
+  "My primary native tools for building production-ready web applications";
 
 export const techStack = [
   {

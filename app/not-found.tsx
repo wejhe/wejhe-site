@@ -1,6 +1,5 @@
 import SectionTitle from "@/app/components/landing-page/section-title";
 import { LargeButton } from "@/app/components/buttons";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function NotFound() {

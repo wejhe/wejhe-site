@@ -10,7 +10,7 @@ export default function TechStack() {
   return (
     <div className="flex flex-col items-center gap-[64px] w-full px-body-padding-mobile lg:px-body-padding-desktop">
       <SectionTitle title={techStackTitle} subtitle={techStackSubtitle} />
-      <div className="flex flex-col lg:flex-row items-center justify-center gap-[40px] w-full">
+      <div className="flex flex-col items-center justify-center lg:grid lg:grid-cols-3 gap-[40px] w-full">
         {techStack.map((stack) => (
           <TechCard
             key={stack.title}

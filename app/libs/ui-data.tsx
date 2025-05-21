@@ -42,7 +42,7 @@ export const techStackSubtitle =
 export const techStack = [
   {
     title: "Frontend",
-    subtitle: "Crafting beautiful UI",
+    subtitle: "Bringing UI to life",
     firstImage: "nextjs.png",
     secondImage: "vuejs.png",
   },
@@ -55,6 +55,24 @@ export const techStack = [
   {
     title: "Database",
     subtitle: "Safely store the data",
+    firstImage: "mongodb.png",
+    secondImage: "postgres.png",
+  },
+  {
+    title: "Mobile",
+    subtitle: "Creating mobile magic",
+    firstImage: "nextjs.png",
+    secondImage: "vuejs.png",
+  },
+  {
+    title: "Low-Code",
+    subtitle: "Fast-track development",
+    firstImage: "springboot.png",
+    secondImage: "expressjs.png",
+  },
+  {
+    title: "Design",
+    subtitle: "Visualizing the ideas",
     firstImage: "mongodb.png",
     secondImage: "postgres.png",
   },

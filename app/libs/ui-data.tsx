@@ -22,8 +22,8 @@ export const heroTitle = "I'm a Software Developer";
 export const heroSubtitle = (
   <>
     Crafting reliable, intuitive, and seamless{" "}
-    <strong className="text-white font-semibold">web experiences</strong> for
-    everyone with the power of cutting-edge technologies and human-centric
+    <strong className="text-white font-semibold">digital experiences</strong>{" "}
+    for everyone with the power of cutting-edge technologies and human-centric
     design
   </>
 );
@@ -37,7 +37,7 @@ export const heroButton: ButtonConfig = {
 export const techStackTitle = "Technology Stack";
 
 export const techStackSubtitle =
-  "My primary native tools for building production-ready web applications";
+  "My go-to tools for building production-ready digital solutions";
 
 export const techStack = [
   {

@@ -25,7 +25,7 @@ export default function Hero() {
           <h1 className="bg-gradient-to-b lg:bg-gradient-to-r from-white to-textual-gray bg-clip-text text-transparent text-center font-bold text-[64px] leading-[80px] lg:leading-normal">
             {heroTitle}
           </h1>
-          <p className="text-textual-gray text-center leading-[36px] lg:leading-[40px] text-[20px] lg:text-[24px] w-full lg:w-[780px]">
+          <p className="text-textual-gray text-center leading-[36px] lg:leading-[40px] text-[20px] lg:text-[24px] w-full lg:w-[800px]">
             {heroSubtitle}
           </p>
         </div>

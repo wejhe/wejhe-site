@@ -41,7 +41,7 @@ export const techStackSubtitle =
 
 export const techStack = [
   {
-    title: "Frontend",
+    title: "Web Frontend",
     subtitle: "Bringing UI to life",
     firstImage: "nextjs.png",
     secondImage: "vuejs.png",
@@ -59,7 +59,7 @@ export const techStack = [
     secondImage: "postgres.png",
   },
   {
-    title: "Mobile",
+    title: "Mobile App",
     subtitle: "Creating mobile magic",
     firstImage: "reactnative.png",
     secondImage: "flutter.png",

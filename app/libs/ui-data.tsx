@@ -61,20 +61,20 @@ export const techStack = [
   {
     title: "Mobile",
     subtitle: "Creating mobile magic",
-    firstImage: "nextjs.png",
-    secondImage: "vuejs.png",
+    firstImage: "reactnative.png",
+    secondImage: "flutter.png",
   },
   {
     title: "Low-Code",
     subtitle: "Fast-track development",
-    firstImage: "springboot.png",
-    secondImage: "expressjs.png",
+    firstImage: "outsystems.png",
+    secondImage: "framer.png",
   },
   {
     title: "Design",
     subtitle: "Visualizing the ideas",
-    firstImage: "mongodb.png",
-    secondImage: "postgres.png",
+    firstImage: "figma.png",
+    secondImage: "photoshop.png",
   },
 ];
 

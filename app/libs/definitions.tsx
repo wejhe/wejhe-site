@@ -5,3 +5,10 @@ export type ButtonConfig = {
   type: ButtonType;
   label: string;
 };
+
+export type Drop = {
+  top: number;
+  delay: number;
+  duration: number;
+  size: number;
+};

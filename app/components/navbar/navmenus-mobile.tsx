@@ -8,18 +8,19 @@ import { usePathname } from "next/navigation";
 import { NavButtonMobile } from "@/app/components/buttons";
 import { navmenus, navbuttons } from "@/app/libs/ui-data";
 import { motion, AnimatePresence } from "framer-motion";
+import { useNavStore } from "@/app/stores/nav-store";
 
 export default function NavMenusMobile() {
   const currentPath = usePathname();
   const [pathname, setPathname] = useState("");
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { isOpen, toggle } = useNavStore();
 
   useEffect(() => {
     setPathname(currentPath);
   }, [currentPath]);
 
   const handleHamburgerClick = () => {
-    setIsMenuOpen(!isMenuOpen);
+    toggle();
   };
 
   const getMenuClass = (href: string) =>
@@ -45,7 +46,7 @@ export default function NavMenusMobile() {
       </div>
 
       <AnimatePresence>
-        {isMenuOpen && (
+        {isOpen && (
           <motion.div
             key="mobile-menu"
             initial={{ x: "100%" }}
@@ -62,7 +63,7 @@ export default function NavMenusMobile() {
                     <Link
                       key={menu.name}
                       href={menu.href}
-                      onClick={() => setIsMenuOpen(false)}
+                      onClick={() => toggle()}
                       className={getMenuClass(menu.href)}
                     >
                       {menu.name}
@@ -74,7 +75,7 @@ export default function NavMenusMobile() {
                   <Link
                     key={button.label}
                     href={button.href}
-                    onClick={() => setIsMenuOpen(false)}
+                    onClick={() => toggle()}
                     className="w-full"
                   >
                     <NavButtonMobile type={button.type}>

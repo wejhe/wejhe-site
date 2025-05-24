@@ -5,36 +5,31 @@ import Link from "next/link";
 import NavMenus from "@/app/components/navbar/navmenus";
 import NavButtons from "@/app/components/navbar/navbuttons";
 import NavMenusMobile from "@/app/components/navbar/navmenus-mobile";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { usePathname } from "next/navigation";
 import { MdNotificationsActive } from "react-icons/md";
+import { useSize } from "react-haiku";
 import { useNavStore } from "@/app/stores/nav-store";
 
 export default function Navbar() {
   const currentPath = usePathname();
   const [pathname, setPathname] = useState("");
-  const [showAnnouncement, setShowAnnouncement] = useState(true);
-  const { isOpen } = useNavStore();
+
+  const navRef = useRef(null);
+  const { height } = useSize(navRef);
+  const { setNavHeight } = useNavStore();
 
   useEffect(() => {
     setPathname(currentPath);
   }, [currentPath]);
 
   useEffect(() => {
-    if (!isOpen) {
-      const timeout = setTimeout(() => {
-        setShowAnnouncement(true);
-      }, 300);
-
-      return () => clearTimeout(timeout);
-    } else {
-      setShowAnnouncement(false);
-    }
-  }, [isOpen]);
+    setNavHeight(height);
+  }, [height, setNavHeight]);
 
   return (
-    <>
-      {pathname === "/" && showAnnouncement && (
+    <nav ref={navRef} className="flex flex-col w-full sticky top-0 z-50">
+      {pathname === "/" && (
         <div className="bg-gradient-to-r from-gradient-purple-start to-gradient-purple-end flex gap-[10px] px-body-padding-mobile items-center justify-center text-white text-[14px] lg:text-[16px] w-full h-announcement-bar-height z-40">
           <MdNotificationsActive className="w-[18px] lg:w-[20px] h-auto flex-shrink-0" />
           <div className="relative overflow-x-hidden w-full lg:w-auto">
@@ -56,7 +51,7 @@ export default function Navbar() {
         </div>
       )}
 
-      <nav className="bg-black w-full h-navbar-height border-b border-stroke-gray sticky top-0 z-50">
+      <div className="bg-black w-full h-navbar-height border-b border-stroke-gray">
         <div className="flex justify-between items-center w-full h-full px-body-padding-mobile lg:px-body-padding-desktop">
           <div className="flex items-center gap-[64px] w-fit">
             <Link href="/">
@@ -74,7 +69,7 @@ export default function Navbar() {
             <NavMenusMobile />
           </div>
         </div>
-      </nav>
-    </>
+      </div>
+    </nav>
   );
 }

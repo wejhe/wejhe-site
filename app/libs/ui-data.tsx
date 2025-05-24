@@ -131,11 +131,19 @@ export const outroTitle = "Transforming Possibility, Shaping Reality";
 
 export const outroSubtitle = "Have an idea in mind? Bring it to life!";
 
-export const outroButton: ButtonConfig = {
-  href: "/consult",
-  type: "primary",
-  label: "Consult a Project",
-};
+export const outroButtons: ButtonConfig[] = [
+  {
+    href: "/consult",
+    type: "primary",
+    label: "Consult a Project",
+  },
+  {
+    href: "none",
+    onClick: () => window.scrollTo({ top: 0, behavior: "smooth" }),
+    type: "secondary",
+    label: "Back to Top",
+  },
+];
 
 export const popularPostsTitle = "Popular Blog Posts";
 

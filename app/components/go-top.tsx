@@ -6,11 +6,16 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export default function GoTop() {
   const [showGoTop, setShowGoTop] = useState(false);
+  const [nearBottom, setNearBottom] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       setShowGoTop(currentScrollY > 300);
+
+      const windowHeight = window.innerHeight;
+      const fullHeight = document.documentElement.scrollHeight;
+      setNearBottom(currentScrollY + windowHeight > fullHeight - 200);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -30,7 +35,7 @@ export default function GoTop() {
             onClick={handleGoTop}
             className="flex items-center justify-center gap-[8px] text-[16px] fixed bottom-body-padding-mobile left-1/2 -translate-x-1/2 z-48 bg-gradient-to-r from-gradient-purple-start to-gradient-purple-end text-white py-[8px] px-[18px] rounded-[100px] shadow-2xl transition-all cursor-pointer hover:from-gradient-purple-hover-start hover:to-gradient-purple-hover-end active:from-gradient-purple-hover-start active:to-gradient-purple-hover-end"
             initial={{ y: 100 }}
-            animate={{ y: 0 }}
+            animate={{ y: nearBottom ? 200 : 0 }}
             exit={{ y: 200 }}
             transition={{ duration: 0.5, ease: "linear" }}
           >

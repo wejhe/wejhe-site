@@ -13,7 +13,7 @@ import { useNavStore } from "@/app/stores/nav-store";
 export default function Navbar() {
   const currentPath = usePathname();
   const [pathname, setPathname] = useState("");
-  const [showAnnouncement, setShowAnnouncement] = useState(false);
+  const [showAnnouncement, setShowAnnouncement] = useState(true);
   const { isOpen } = useNavStore();
 
   useEffect(() => {

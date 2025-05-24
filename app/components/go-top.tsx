@@ -32,7 +32,7 @@ export default function GoTop() {
             initial={{ y: 100 }}
             animate={{ y: 0 }}
             exit={{ y: 200 }}
-            transition={{ duration: 0.3, ease: "linear" }}
+            transition={{ duration: 0.5, ease: "linear" }}
           >
             <FaArrowUp size={16} />
             <p>Back to Top</p>

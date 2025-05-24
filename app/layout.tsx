@@ -3,6 +3,7 @@ import "./styles/global.css";
 import { Inter } from "next/font/google";
 import Navbar from "@/app/components/navbar/navbar";
 import Footer from "@/app/components/footer";
+import GoTop from "@/app/components/go-top";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -92,6 +93,7 @@ export default function RootLayout({
       <body className="flex flex-col min-h-[100dvh]">
         <Navbar />
         <div className="py-y-padding">{children}</div>
+        <GoTop />
         <Footer />
       </body>
     </html>

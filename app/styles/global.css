@@ -12,6 +12,8 @@
   --color-link-blue: #52a8ff;
   --color-gradient-purple-start: #9013fe;
   --color-gradient-purple-end: #6610f2;
+  --color-gradient-purple-hover-start: #720dca;
+  --color-gradient-purple-hover-end: #42099d;
 
   --spacing-navbar-height: 64px;
   --spacing-announcement-bar-height: 44px;

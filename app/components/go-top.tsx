@@ -29,9 +29,9 @@ export default function GoTop() {
           <motion.button
             onClick={handleGoTop}
             className="flex items-center justify-center gap-[8px] text-[16px] fixed bottom-body-padding-mobile left-1/2 -translate-x-1/2 z-48 bg-gradient-to-r from-gradient-purple-start to-gradient-purple-end text-white py-[8px] px-[18px] rounded-[100px] shadow-2xl transition-all cursor-pointer hover:from-gradient-purple-hover-start hover:to-gradient-purple-hover-end active:from-gradient-purple-hover-start active:to-gradient-purple-hover-end"
-            initial={{ y: 100, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            exit={{ y: 100, opacity: 0 }}
+            initial={{ y: 100 }}
+            animate={{ y: 0 }}
+            exit={{ y: 200 }}
             transition={{ duration: 0.3, ease: "linear" }}
           >
             <FaArrowUp size={16} />

@@ -11,7 +11,7 @@ export default function Outro() {
       <SectionTitle title={outroTitle} subtitle={outroSubtitle} />
       <div className="flex flex-col lg:flex-row items-center justify-center gap-[16px] lg:gap-[24px] px-body-padding-mobile lg:px-body-padding-desktop  w-full">
         {outroButtons.map((button) =>
-          button.href ? (
+          button.href !== "none" ? (
             <Link
               key={button.label}
               href={button.href}

@@ -138,6 +138,7 @@ export const outroButtons: ButtonConfig[] = [
     label: "Consult a Project",
   },
   {
+    href: "none",
     onClick: () => window.scrollTo({ top: 0, behavior: "smooth" }),
     type: "secondary",
     label: "Back to Top",

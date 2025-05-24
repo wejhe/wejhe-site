@@ -33,7 +33,7 @@ export default function Navbar() {
   }, [isOpen]);
 
   return (
-    <>
+    <nav>
       {pathname === "/" && showAnnouncement && (
         <div className="bg-gradient-to-r from-gradient-purple-start to-gradient-purple-end flex gap-[10px] px-body-padding-mobile items-center justify-center text-white text-[14px] lg:text-[16px] w-full h-announcement-bar-height z-40">
           <MdNotificationsActive className="w-[18px] lg:w-[20px] h-auto flex-shrink-0" />
@@ -56,7 +56,7 @@ export default function Navbar() {
         </div>
       )}
 
-      <nav className="bg-black w-full h-navbar-height border-b border-stroke-gray sticky top-0 z-50">
+      <div className="bg-black w-full h-navbar-height border-b border-stroke-gray sticky top-0 z-50">
         <div className="flex justify-between items-center w-full h-full px-body-padding-mobile lg:px-body-padding-desktop">
           <div className="flex items-center gap-[64px] w-fit">
             <Link href="/">
@@ -74,7 +74,7 @@ export default function Navbar() {
             <NavMenusMobile />
           </div>
         </div>
-      </nav>
-    </>
+      </div>
+    </nav>
   );
 }

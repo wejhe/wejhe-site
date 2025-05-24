@@ -13,7 +13,7 @@ import { useNavStore } from "@/app/stores/nav-store";
 export default function NavMenusMobile() {
   const currentPath = usePathname();
   const [pathname, setPathname] = useState("");
-  const { isOpen, toggle } = useNavStore();
+  const { isOpen, toggle, navHeight } = useNavStore();
 
   useEffect(() => {
     setPathname(currentPath);
@@ -54,8 +54,8 @@ export default function NavMenusMobile() {
             exit={{ x: "100%" }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
             style={{
-              height: `calc(100dvh - var(--spacing-navbar-height) - var(--spacing-announcement-bar-height))`,
-              top: `calc(var(--spacing-navbar-height) + var(--spacing-announcement-bar-height))`,
+              height: `calc(100dvh - ${navHeight}px)`,
+              top: navHeight,
             }}
             className="lg:hidden bg-black fixed right-0 w-[320px] px-body-padding-mobile py-body-padding-mobile border-l border-stroke-gray z-50"
           >

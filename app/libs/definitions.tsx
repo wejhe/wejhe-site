@@ -16,4 +16,6 @@ export type Drop = {
 export type NavStore = {
   isOpen: boolean;
   toggle: () => void;
+  navHeight: number;
+  setNavHeight: (height: number) => void;
 };

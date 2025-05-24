@@ -1,7 +1,8 @@
 export type ButtonType = "primary" | "secondary";
 
 export type ButtonConfig = {
-  href: string;
+  href?: string;
+  onClick?: () => void;
   type: ButtonType;
   label: string;
 };

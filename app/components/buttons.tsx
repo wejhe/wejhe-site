@@ -3,9 +3,11 @@ import { ButtonType } from "@/app/libs/definitions";
 
 export function LargeButton({
   type,
+  onClick,
   children,
 }: {
   type: ButtonType;
+  onClick?: () => void;
   children: React.ReactNode;
 }) {
   const getButtonClass = (type: string) =>
@@ -19,14 +21,20 @@ export function LargeButton({
       }
     );
 
-  return <button className={getButtonClass(type)}>{children}</button>;
+  return (
+    <button onClick={onClick} className={getButtonClass(type)}>
+      {children}
+    </button>
+  );
 }
 
 export function SmallButton({
   type,
+  onClick,
   children,
 }: {
   type: ButtonType;
+  onClick?: () => void;
   children: React.ReactNode;
 }) {
   const getButtonClass = (type: string) =>
@@ -37,14 +45,20 @@ export function SmallButton({
         type === "secondary",
     });
 
-  return <button className={getButtonClass(type)}>{children}</button>;
+  return (
+    <button onClick={onClick} className={getButtonClass(type)}>
+      {children}
+    </button>
+  );
 }
 
 export function NavButton({
   type,
+  onClick,
   children,
 }: {
   type: ButtonType;
+  onClick?: () => void;
   children: React.ReactNode;
 }) {
   const getButtonClass = (type: string) =>
@@ -55,14 +69,20 @@ export function NavButton({
         type === "secondary",
     });
 
-  return <button className={getButtonClass(type)}>{children}</button>;
+  return (
+    <button onClick={onClick} className={getButtonClass(type)}>
+      {children}
+    </button>
+  );
 }
 
 export function NavButtonMobile({
   type,
+  onClick,
   children,
 }: {
   type: ButtonType;
+  onClick?: () => void;
   children: React.ReactNode;
 }) {
   const getButtonClass = (type: string) =>
@@ -73,5 +93,9 @@ export function NavButtonMobile({
         type === "secondary",
     });
 
-  return <button className={getButtonClass(type)}>{children}</button>;
+  return (
+    <button onClick={onClick} className={getButtonClass(type)}>
+      {children}
+    </button>
+  );
 }

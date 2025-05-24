@@ -28,7 +28,11 @@ export default function Navbar() {
   }, [height, setNavHeight]);
 
   return (
-    <nav ref={navRef} className="flex flex-col w-full sticky top-0 z-50">
+    <nav
+      id="nav"
+      ref={navRef}
+      className="flex flex-col w-full sticky top-0 z-50"
+    >
       {pathname === "/" && (
         <div className="bg-gradient-to-r from-gradient-purple-start to-gradient-purple-end flex gap-[10px] px-body-padding-mobile items-center justify-center text-white text-[14px] lg:text-[16px] w-full h-announcement-bar-height z-40">
           <MdNotificationsActive className="w-[18px] lg:w-[20px] h-auto flex-shrink-0" />

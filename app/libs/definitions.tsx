@@ -12,3 +12,8 @@ export type Drop = {
   duration: number;
   size: number;
 };
+
+export type NavStore = {
+  isOpen: boolean;
+  toggle: () => void;
+};

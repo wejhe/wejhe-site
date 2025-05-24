@@ -8,12 +8,9 @@ export default function GoTop() {
   const [showGoTop, setShowGoTop] = useState(false);
 
   useEffect(() => {
-    let lastScrollY = window.scrollY;
-
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       setShowGoTop(currentScrollY > 300);
-      lastScrollY = currentScrollY;
     };
 
     window.addEventListener("scroll", handleScroll);

@@ -91,32 +91,34 @@ export const latestProject = {
 
 export const serviceOfferingsTitle = "Service Offerings";
 
-export const serviceOfferingsSubtitle =
-  "Exploring, shaping, and delivering digital solutions tailored to your unique needs";
-
 export const serviceOfferings = [
   {
     title: "Full Scale Web App",
-    subtitle:
-      "Build a fully functional mid-to-large scale web app natively or using OutSystems",
+    subtitle: "Build a mid-to-large scale web app natively or using OutSystems",
     icon: "fullweb.svg",
   },
   {
     title: "Simple Website",
     subtitle:
-      "Build a simple website (e.g. Landing Page, Invitation) natively or using Framer",
+      "Build a simple personal and commercial website natively or using Framer",
     icon: "simpleweb.svg",
+  },
+  {
+    title: "Mobile App",
+    subtitle:
+      "Build a high-performance mobile app using React Native or Flutter",
+    icon: "mobile.svg",
   },
   {
     title: "UI UX Design",
     subtitle:
-      "Build an intuitive user interface design for web and mobile applications using Figma",
+      "Build an intuitive interface design for web and mobile app using Figma",
     icon: "uiuxdesign.svg",
   },
   {
     title: "RESTful API",
     subtitle:
-      "Build a well documented RESTful API using Spring Boot Java or Express.js",
+      "Build a well-documented RESTful API using Spring Boot or Express.js",
     icon: "restfulapi.svg",
   },
 ];

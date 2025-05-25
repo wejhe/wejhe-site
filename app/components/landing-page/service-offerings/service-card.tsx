@@ -10,9 +10,9 @@ export default function ServiceCard({
   icon: string;
 }) {
   return (
-    <div className="flex flex-col items-center justify-center gap-[24px] w-full">
-      <Image src={`/${icon}`} width={64} height={64} alt={icon} />
-      <div className="flex flex-col text-center items-center justify-center gap-[4px] w-full">
+    <div className="bg-black border border-stroke-gray rounded-[24px] p-[24px] flex flex-col items-center lg:items-start justify-start gap-[24px] w-full lg:h-full">
+      <Image src={`/${icon}`} width={40} height={40} alt={icon} />
+      <div className="flex flex-col gap-[4px] text-center lg:text-start w-full">
         <strong className="text-white text-[24px] font-bold">{title}</strong>
         <p className="text-textual-gray text-[20px]">{subtitle}</p>
       </div>

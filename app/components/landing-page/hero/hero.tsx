@@ -12,7 +12,7 @@ import { AiFillPlayCircle } from "react-icons/ai";
 
 export default function Hero() {
   return (
-    <div className="flex flex-col items-center gap-[64px] w-full px-body-padding-mobile lg:px-body-padding-desktop">
+    <div className="flex flex-col items-center gap-[64px] w-full bg-[url('/bg-hero.svg')] bg-top bg-no-repeat bg-size-[100%_auto] px-body-padding-mobile lg:px-body-padding-desktop">
       <div className="flex flex-col items-center gap-[40px] w-full">
         <div className="flex flex-col lg:flex-row items-center justify-center gap-[16px] lg:gap-[24px] w-full">
           {heroStatuses.map((status) => (

@@ -242,25 +242,24 @@ export const landingPage = {
       },
     ],
   },
+  outro: {
+    title: "Transforming Possibility, Shaping Reality",
+    subtitle: "Have an idea in mind? Bring it to life!",
+    button: [
+      {
+        href: "/consult",
+        type: "primary",
+        label: "Consult a Project",
+      } satisfies ButtonConfig,
+      {
+        href: "none",
+        onClick: () => window.scrollTo({ top: 0, behavior: "smooth" }),
+        type: "secondary",
+        label: "Back to Top",
+      } satisfies ButtonConfig,
+    ],
+  },
 };
-
-export const outroTitle = "Transforming Possibility, Shaping Reality";
-
-export const outroSubtitle = "Have an idea in mind? Bring it to life!";
-
-export const outroButtons: ButtonConfig[] = [
-  {
-    href: "/consult",
-    type: "primary",
-    label: "Consult a Project",
-  },
-  {
-    href: "none",
-    onClick: () => window.scrollTo({ top: 0, behavior: "smooth" }),
-    type: "secondary",
-    label: "Back to Top",
-  },
-];
 
 export const copyright = "2025 Wahyu Wijiyanto";
 

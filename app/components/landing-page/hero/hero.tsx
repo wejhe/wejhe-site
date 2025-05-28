@@ -36,7 +36,7 @@ export default function Hero() {
             name="idea"
             type="text"
             placeholder="I want to build..."
-            className="no-webkit-appearance bg-black placeholder-textual-gray focus:text-white border border-stroke-gray rounded-[8px] py-[16px] pl-[50px] pr-[180px] text-[16px] h-auto hover:border-stroke-gray-hover focus:border-stroke-gray-hover focus:shadow-[0_0_0_3px_var(--color-stroke-gray)] outline-none w-full"
+            className="no-webkit-appearance bg-black placeholder-textual-gray focus:text-white border border-stroke-gray rounded-[8px] py-[16px] pl-[50px] pr-[116px] text-[16px] h-auto hover:border-stroke-gray-hover focus:border-stroke-gray-hover focus:shadow-[0_0_0_3px_var(--color-stroke-gray)] outline-none w-full"
           />
           <Image
             src="/idea.svg"

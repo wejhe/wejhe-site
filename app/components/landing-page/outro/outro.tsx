@@ -3,14 +3,17 @@
 import SectionTitle from "@/app/components/landing-page/section-title";
 import { LargeButton } from "@/app/components/buttons";
 import Link from "next/link";
-import { outroTitle, outroSubtitle, outroButtons } from "@/app/libs/ui-data";
+import { landingPage } from "@/app/libs/ui-data";
 
 export default function Outro() {
   return (
     <div className="bg-gradient-to-b from-block-gray to-black flex flex-col items-center justify-center rounded-t-[64px] lg:rounded-t-[120px] gap-[64px] py-[80px] px-body-padding-mobile lg:px-body-padding-desktop w-full">
-      <SectionTitle title={outroTitle} subtitle={outroSubtitle} />
+      <SectionTitle
+        title={landingPage.outro.title}
+        subtitle={landingPage.outro.subtitle}
+      />
       <div className="flex flex-col lg:flex-row items-center justify-center gap-[16px] lg:gap-[24px] px-body-padding-mobile lg:px-body-padding-desktop  w-full">
-        {outroButtons.map((button) =>
+        {landingPage.outro.button.map((button) =>
           button.href !== "none" ? (
             <Link
               key={button.label}

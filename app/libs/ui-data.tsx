@@ -7,7 +7,6 @@ export const navbar = {
     alt: "Logo of Wejhe",
   },
   menus: [
-    { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Projects", href: "/projects" },
     { name: "Services", href: "/services" },

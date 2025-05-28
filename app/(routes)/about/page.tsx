@@ -24,6 +24,7 @@ export default function Page() {
               key={button.label}
               href={button.href}
               className="w-full lg:w-auto"
+              prefetch={button.href.endsWith(".pdf") ? false : true}
             >
               <LargeButton type={button.type}>{button.label}</LargeButton>
             </Link>

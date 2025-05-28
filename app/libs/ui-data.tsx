@@ -1,16 +1,26 @@
 import { ButtonConfig } from "@/app/libs/definitions";
 
-export const navmenus = [
-  { name: "About", href: "/about" },
-  { name: "Projects", href: "/projects" },
-  { name: "Services", href: "/services" },
-  { name: "Blog", href: "/blog" },
-];
-
-export const navbuttons: ButtonConfig[] = [
-  { href: "/feedback", type: "secondary", label: "Give Feedback" },
-  { href: "/login", type: "primary", label: "Login" },
-];
+export const navbar = {
+  logo: {
+    href: "/",
+    image: "logo.svg",
+    alt: "Logo of Wejhe",
+  },
+  menus: [
+    { name: "Home", href: "/" },
+    { name: "About", href: "/about" },
+    { name: "Projects", href: "/projects" },
+    { name: "Services", href: "/services" },
+    { name: "Blog", href: "/blog" },
+  ],
+  button: [
+    { href: "/feedback", type: "secondary", label: "Give Feedback" },
+    { href: "/login", type: "primary", label: "Login" },
+  ] satisfies ButtonConfig[],
+  announcement:
+    /* Important Notes : minimal panjang kalimatnya segini, biar langsung jalan animasinya di under-lg */
+    "This website is currently under development and I sincerely value all your feedback to help improve this website further",
+};
 
 export const landingPage = {
   hero: {
@@ -144,13 +154,13 @@ export const landingPage = {
         href: "/blog",
         type: "primary",
         label: "Open Blog Page",
-      } satisfies ButtonConfig,
+      },
       {
         href: "/contribute",
         type: "secondary",
         label: "Write and Contribute",
-      } satisfies ButtonConfig,
-    ],
+      },
+    ] satisfies ButtonConfig[],
     posts: [
       {
         title: "Understanding State Management in React",
@@ -250,14 +260,14 @@ export const landingPage = {
         href: "/consult",
         type: "primary",
         label: "Consult a Project",
-      } satisfies ButtonConfig,
+      },
       {
         href: "none",
         onClick: () => window.scrollTo({ top: 0, behavior: "smooth" }),
         type: "secondary",
         label: "Back to Top",
-      } satisfies ButtonConfig,
-    ],
+      },
+    ] satisfies ButtonConfig[],
   },
 };
 

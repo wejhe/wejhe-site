@@ -10,6 +10,7 @@ import { usePathname } from "next/navigation";
 import { MdNotificationsActive } from "react-icons/md";
 import { useSize } from "react-haiku";
 import { useNavStore } from "@/app/stores/nav-store";
+import { navbar } from "@/app/libs/ui-data";
 
 export default function Navbar() {
   const currentPath = usePathname();
@@ -38,18 +39,10 @@ export default function Navbar() {
           <MdNotificationsActive className="w-[18px] lg:w-[20px] h-auto flex-shrink-0" />
           <div className="relative overflow-x-hidden w-full lg:w-auto">
             <div className="animate-announcement-marquee animate-stop inline-block whitespace-nowrap">
-              <p className="mx-[80px] lg:mx-0">
-                {" "}
-                {/* Important Notes : minimal panjang kalimatnya segini, biar langsung jalan animasinya di under-lg */}
-                This website is currently under development and I sincerely
-                value all your feedback to help improve this website further
-              </p>
+              <p className="mx-[80px] lg:mx-0">{navbar.announcement}</p>
             </div>
             <div className="lg:hidden absolute top-0 animate-announcement-marquee-duplicate animate-stop inline-block whitespace-nowrap">
-              <p className="mx-[80px] lg:mx-0">
-                This website is currently under development and I sincerely
-                value all your feedback to help improve this website further
-              </p>
+              <p className="mx-[80px] lg:mx-0">{navbar.announcement}</p>
             </div>
           </div>
         </div>
@@ -60,10 +53,10 @@ export default function Navbar() {
           <div className="flex items-center gap-[64px] w-fit">
             <Link href="/">
               <Image
-                src="/logo.svg"
+                src={navbar.logo.image}
                 width={40}
                 height={24}
-                alt="Logo of Wejhe"
+                alt={navbar.logo.alt}
               />
             </Link>
             <NavMenus />

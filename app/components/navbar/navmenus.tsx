@@ -4,7 +4,7 @@ import Link from "next/link";
 import clsx from "clsx";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import { navmenus } from "@/app/libs/ui-data";
+import { navbar } from "@/app/libs/ui-data";
 
 export default function NavMenus() {
   const currentPath = usePathname();
@@ -24,7 +24,7 @@ export default function NavMenus() {
 
   return (
     pathname &&
-    navmenus.map((menu) => (
+    navbar.menus.map((menu) => (
       <Link
         key={menu.name}
         href={menu.href}

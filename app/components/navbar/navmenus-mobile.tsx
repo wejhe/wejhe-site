@@ -6,7 +6,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { NavButtonMobile } from "@/app/components/buttons";
-import { navmenus, navbuttons } from "@/app/libs/ui-data";
+import { navbar } from "@/app/libs/ui-data";
 import { motion, AnimatePresence } from "framer-motion";
 import { useNavStore } from "@/app/stores/nav-store";
 
@@ -62,7 +62,7 @@ export default function NavMenusMobile() {
             <div className="h-full flex flex-col justify-between">
               <div className="flex flex-col gap-[24px] items-center">
                 {pathname &&
-                  navmenus.map((menu) => (
+                  navbar.menus.map((menu) => (
                     <Link
                       key={menu.name}
                       href={menu.href}
@@ -74,7 +74,7 @@ export default function NavMenusMobile() {
                   ))}
               </div>
               <div className="flex flex-col gap-[16px] items-center w-full">
-                {navbuttons.map((button) => (
+                {navbar.button.map((button) => (
                   <Link
                     key={button.label}
                     href={button.href}

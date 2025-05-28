@@ -290,7 +290,7 @@ export const aboutPage = {
         <span className="text-white">Wejhe!</span>
       </>
     ),
-    image: "about-avatar.png",
+    image: "about-avatar.svg",
     button: [
       {
         href: "/cv-wahyu-wijiyanto.pdf",

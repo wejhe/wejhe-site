@@ -35,56 +35,54 @@ export const landingPage = {
       button: {
         href: "/consult",
         type: "primary",
-        label: "Consult Idea",
+        label: "Consult",
       } satisfies ButtonConfig,
       hint: "Consult your idea to get started",
     },
   },
+  techStack: {
+    title: "Technology Stack",
+    subtitle: "My go-to tools for building production-ready digital solutions",
+    items: [
+      {
+        title: "Web Frontend",
+        subtitle: "Bringing UI to life",
+        firstImage: "nextjs.png",
+        secondImage: "vuejs.png",
+      },
+      {
+        title: "Backend",
+        subtitle: "Doing the business logic",
+        firstImage: "springboot.png",
+        secondImage: "expressjs.png",
+      },
+      {
+        title: "Database",
+        subtitle: "Safely store the data",
+        firstImage: "mongodb.png",
+        secondImage: "postgres.png",
+      },
+      {
+        title: "Mobile App",
+        subtitle: "Creating mobile magic",
+        firstImage: "reactnative.png",
+        secondImage: "flutter.png",
+      },
+      {
+        title: "Low-Code",
+        subtitle: "Fast-track development",
+        firstImage: "outsystems.png",
+        secondImage: "framer.png",
+      },
+      {
+        title: "Design",
+        subtitle: "Visualizing the ideas",
+        firstImage: "figma.png",
+        secondImage: "photoshop.png",
+      },
+    ],
+  },
 };
-
-export const techStackTitle = "Technology Stack";
-
-export const techStackSubtitle =
-  "My go-to tools for building production-ready digital solutions";
-
-export const techStack = [
-  {
-    title: "Web Frontend",
-    subtitle: "Bringing UI to life",
-    firstImage: "nextjs.png",
-    secondImage: "vuejs.png",
-  },
-  {
-    title: "Backend",
-    subtitle: "Doing the business logic",
-    firstImage: "springboot.png",
-    secondImage: "expressjs.png",
-  },
-  {
-    title: "Database",
-    subtitle: "Safely store the data",
-    firstImage: "mongodb.png",
-    secondImage: "postgres.png",
-  },
-  {
-    title: "Mobile App",
-    subtitle: "Creating mobile magic",
-    firstImage: "reactnative.png",
-    secondImage: "flutter.png",
-  },
-  {
-    title: "Low-Code",
-    subtitle: "Fast-track development",
-    firstImage: "outsystems.png",
-    secondImage: "framer.png",
-  },
-  {
-    title: "Design",
-    subtitle: "Visualizing the ideas",
-    firstImage: "figma.png",
-    secondImage: "photoshop.png",
-  },
-];
 
 export const latestProject = {
   sectionTitle: "Latest Project",

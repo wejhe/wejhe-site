@@ -82,6 +82,46 @@ export const landingPage = {
       },
     ],
   },
+  serviceOfferings: {
+    title: "Service Offerings",
+    button: {
+      href: "/services",
+      type: "primary",
+      label: "Explore All Services",
+    } satisfies ButtonConfig,
+    items: [
+      {
+        title: "Full Scale Web App",
+        subtitle:
+          "Build a mid-to-large scale web app natively or using OutSystems",
+        icon: "fullweb.svg",
+      },
+      {
+        title: "Simple Website",
+        subtitle:
+          "Build a simple personal and commercial website natively or using Framer",
+        icon: "simpleweb.svg",
+      },
+      {
+        title: "Mobile App",
+        subtitle:
+          "Build a high-performance mobile app using React Native or Flutter",
+        icon: "mobile.svg",
+      },
+      {
+        title: "UI UX Design",
+        subtitle:
+          "Build an intuitive interface design for web and mobile app using Figma",
+        icon: "uiuxdesign.svg",
+      },
+      {
+        title: "RESTful API",
+        subtitle:
+          "Build a well-documented RESTful API using Spring Boot or Express.js",
+        icon: "restfulapi.svg",
+      },
+    ],
+  },
 };
 
 export const latestProject = {

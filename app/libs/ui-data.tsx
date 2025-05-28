@@ -122,57 +122,98 @@ export const landingPage = {
       },
     ],
   },
-};
-
-export const latestProject = {
-  sectionTitle: "Latest Project",
-  projectName: "BSI Walled",
-  projectDescription: "Financial Transaction Web App",
-  projectLongDescription:
-    "BSI Walled is a wallet application that supports fund transfers and wallet top-ups, and is integrated with financial transaction tracking features that enable users to monitor income and expense summaries in real time across weekly, monthly, and quarterly periods",
-  buttonLabel: "See More Projects",
-  buttonHref: "/projects",
-  image: "/walled.png",
-};
-
-export const serviceOfferingsTitle = "Service Offerings";
-
-export const serviceOfferings = [
-  {
-    title: "Full Scale Web App",
-    subtitle: "Build a mid-to-large scale web app natively or using OutSystems",
-    icon: "fullweb.svg",
+  latestProject: {
+    title: "Latest Project",
+    projectName: "BSI Walled",
+    projectDescription: "Financial Transaction Web App",
+    projectLongDescription:
+      "BSI Walled is a wallet application that supports fund transfers and wallet top-ups, and is integrated with financial transaction tracking features that enable users to monitor income and expense summaries in real time across weekly, monthly, and quarterly periods",
+    image: "/walled.png",
+    button: {
+      href: "/projects",
+      type: "primary",
+      label: "See More Projects",
+    } satisfies ButtonConfig,
   },
-  {
-    title: "Simple Website",
+  popularPosts: {
+    title: "Popular Blog Posts",
     subtitle:
-      "Build a simple personal and commercial website natively or using Framer",
-    icon: "simpleweb.svg",
+      "High quality articles discussing innovations and issues in the world of technology",
+    button: [
+      {
+        href: "/blog",
+        type: "primary",
+        label: "Open Blog Page",
+      } satisfies ButtonConfig,
+      {
+        href: "/contribute",
+        type: "secondary",
+        label: "Write and Contribute",
+      } satisfies ButtonConfig,
+    ],
+    posts: [
+      {
+        title: "Understanding State Management in React",
+        author: "Wahyu W",
+        timeToRead: 5,
+        views: 783,
+      },
+      {
+        title: "Building Reusable Components in Next.js",
+        author: "Wahyu W",
+        timeToRead: 7,
+        views: 654,
+      },
+      {
+        title: "A Guide to React Hooks: useEffect and useState",
+        author: "Wahyu W",
+        timeToRead: 6,
+        views: 912,
+      },
+      {
+        title: "How to Optimize Performance in React Apps",
+        author: "Wahyu W",
+        timeToRead: 8,
+        views: 1032,
+      },
+      {
+        title: "CSS Modules vs Tailwind CSS in-Depth-Review",
+        author: "Wahyu W",
+        timeToRead: 5,
+        views: 788,
+      },
+      {
+        title: "Deploying a Next.js App Easily on Vercel",
+        author: "Wahyu W",
+        timeToRead: 4,
+        views: 521,
+      },
+      {
+        title: "Getting Started with TypeScript in React",
+        author: "Wahyu W",
+        timeToRead: 6,
+        views: 689,
+      },
+      {
+        title: "Managing Your App's Global State with Zustand",
+        author: "Wahyu W",
+        timeToRead: 5,
+        views: 742,
+      },
+      {
+        title: "Dark Mode in Next.js Using Tailwind and Context",
+        author: "Wahyu W",
+        timeToRead: 6,
+        views: 837,
+      },
+      {
+        title: "Handling Forms Input in React the Easy Way",
+        author: "Wahyu W",
+        timeToRead: 5,
+        views: 910,
+      },
+    ],
   },
-  {
-    title: "Mobile App",
-    subtitle:
-      "Build a high-performance mobile app using React Native or Flutter",
-    icon: "mobile.svg",
-  },
-  {
-    title: "UI UX Design",
-    subtitle:
-      "Build an intuitive interface design for web and mobile app using Figma",
-    icon: "uiuxdesign.svg",
-  },
-  {
-    title: "RESTful API",
-    subtitle:
-      "Build a well-documented RESTful API using Spring Boot or Express.js",
-    icon: "restfulapi.svg",
-  },
-];
-
-export const serviceOfferingsButton: ButtonConfig = {
-  href: "/services",
-  type: "primary",
-  label: "Explore All Services",
 };
 
 export const outroTitle = "Transforming Possibility, Shaping Reality";
@@ -190,79 +231,6 @@ export const outroButtons: ButtonConfig[] = [
     onClick: () => window.scrollTo({ top: 0, behavior: "smooth" }),
     type: "secondary",
     label: "Back to Top",
-  },
-];
-
-export const popularPostsTitle = "Popular Blog Posts";
-
-export const popularPostsSubtitle =
-  "High quality articles discussing innovations and issues in the world of technology";
-
-export const popularPostsButtons: ButtonConfig[] = [
-  { href: "/blog", type: "primary", label: "Open Blog Page" },
-  { href: "/contribute", type: "secondary", label: "Write and Contribute" },
-];
-
-export const popularPosts = [
-  {
-    title: "Understanding State Management in React",
-    author: "Wahyu W",
-    timeToRead: 5,
-    views: 783,
-  },
-  {
-    title: "Building Reusable Components in Next.js",
-    author: "Wahyu W",
-    timeToRead: 7,
-    views: 654,
-  },
-  {
-    title: "A Guide to React Hooks: useEffect and useState",
-    author: "Wahyu W",
-    timeToRead: 6,
-    views: 912,
-  },
-  {
-    title: "How to Optimize Performance in React Apps",
-    author: "Wahyu W",
-    timeToRead: 8,
-    views: 1032,
-  },
-  {
-    title: "CSS Modules vs Tailwind CSS in-Depth-Review",
-    author: "Wahyu W",
-    timeToRead: 5,
-    views: 788,
-  },
-  {
-    title: "Deploying a Next.js App Easily on Vercel",
-    author: "Wahyu W",
-    timeToRead: 4,
-    views: 521,
-  },
-  {
-    title: "Getting Started with TypeScript in React",
-    author: "Wahyu W",
-    timeToRead: 6,
-    views: 689,
-  },
-  {
-    title: "Managing Your App's Global State with Zustand",
-    author: "Wahyu W",
-    timeToRead: 5,
-    views: 742,
-  },
-  {
-    title: "Dark Mode in Next.js Using Tailwind and Context",
-    author: "Wahyu W",
-    timeToRead: 6,
-    views: 837,
-  },
-  {
-    title: "Handling Forms Input in React the Easy Way",
-    author: "Wahyu W",
-    timeToRead: 5,
-    views: 910,
   },
 ];
 

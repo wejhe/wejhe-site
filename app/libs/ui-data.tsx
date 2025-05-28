@@ -278,7 +278,30 @@ export const landingPage = {
   },
 };
 
-export const aboutButtons: ButtonConfig[] = [
-  { href: "/blog", type: "primary", label: "Download CV" },
-  { href: "/contribute", type: "secondary", label: "Contact Me" },
-];
+export const aboutPage = {
+  hero: {
+    tag: {
+      icon: "arrow-right.svg",
+      label: "Get to Know Me",
+    },
+    title: (
+      <>
+        My name is Wahyu Wijiyanto, call me{" "}
+        <span className="text-white">Wejhe!</span>
+      </>
+    ),
+    image: "about-avatar.png",
+    button: [
+      {
+        href: "/cv-wahyu-wijiyanto.pdf",
+        type: "primary",
+        label: "Download CV",
+      },
+      {
+        href: "/contact",
+        type: "secondary",
+        label: "Contact Me",
+      },
+    ] satisfies ButtonConfig[],
+  },
+};

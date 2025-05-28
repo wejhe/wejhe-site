@@ -214,6 +214,34 @@ export const landingPage = {
       },
     ],
   },
+  testimonials: {
+    title: "Customer Testimonials",
+    subtitle:
+      "Hear what clients say about the results and experiences we've built together",
+    items: [
+      {
+        name: "Satriyo Bagus P",
+        role: "Bank Syariah Indonesia",
+        testimonial:
+          "Wejhe is a very reliable professional with exceptional adaptability. He consistently completes assigned tasks promptly and accurately. Working alongside him has been a truly enjoyable experience.",
+        image: "testi-1.png",
+      },
+      {
+        name: "Vernika Silviana",
+        role: "Ganesha Operation",
+        testimonial:
+          "Just trust me, Wejhe is super quick to respond, which makes the whole process smooth and easy. What I really appreciate is how well he understands what I’m looking for. He always takes the time to get what I need, and the results always go beyond what I had in mind.",
+        image: "testi-2.png",
+      },
+      {
+        name: "Muhammad Imron",
+        role: "Bank Central Asia",
+        testimonial:
+          "Wejhe is a highly skilled and professional developer. He is able to think of a solution that others might not have considered. He is also a trustworthy person who can be relied upon to complete specific tasks on time and with high quality.",
+        image: "testi-3.png",
+      },
+    ],
+  },
 };
 
 export const outroTitle = "Transforming Possibility, Shaping Reality";
@@ -231,35 +259,6 @@ export const outroButtons: ButtonConfig[] = [
     onClick: () => window.scrollTo({ top: 0, behavior: "smooth" }),
     type: "secondary",
     label: "Back to Top",
-  },
-];
-
-export const testimonialsTitle = "Customer Testimonials";
-
-export const testimonialsSubtitle =
-  "Hear what clients say about the results and experiences we've built together";
-
-export const testimonials = [
-  {
-    name: "Satriyo Bagus P",
-    role: "Bank Syariah Indonesia",
-    testimonial:
-      "Wejhe is a very reliable professional with exceptional adaptability. He consistently completes assigned tasks promptly and accurately. Working alongside him has been a truly enjoyable experience.",
-    image: "testi-1.png",
-  },
-  {
-    name: "Vernika Silviana",
-    role: "Ganesha Operation",
-    testimonial:
-      "Just trust me, Wejhe is super quick to respond, which makes the whole process smooth and easy. What I really appreciate is how well he understands what I’m looking for. He always takes the time to get what I need, and the results always go beyond what I had in mind.",
-    image: "testi-2.png",
-  },
-  {
-    name: "Muhammad Imron",
-    role: "Bank Central Asia",
-    testimonial:
-      "Wejhe is a highly skilled and professional developer. He is able to think of a solution that others might not have considered. He is also a trustworthy person who can be relied upon to complete specific tasks on time and with high quality.",
-    image: "testi-3.png",
   },
 ];
 

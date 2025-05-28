@@ -244,7 +244,7 @@ export const testimonials = [
     name: "Muhammad Imron",
     role: "Bank Central Asia",
     testimonial:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus enim eget nulla auctor volutpat. Habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+      "Wejhe is a highly skilled and professional developer. He is able to think of a solution that others might not have considered. He is also a trustworthy person who can be relied upon to complete specific tasks on time and with high quality.",
     image: "testi-3.png",
   },
 ];

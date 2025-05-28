@@ -1,6 +1,7 @@
 import { aboutPage } from "@/app/libs/ui-data";
 import { LargeTag } from "@/app/components/tags";
 import Link from "next/link";
+import Image from "next/image";
 import { LargeButton } from "@/app/components/buttons";
 
 export default function Page() {
@@ -31,10 +32,15 @@ export default function Page() {
           ))}
         </div>
       </div>
-      <div
-        className="w-full h-auto rounded-[24px] bg-cover bg-center"
-        style={{ backgroundImage: `url(${aboutPage.hero.image})` }}
-      ></div>
+      <div className="relative w-full h-auto">
+        <Image
+          src={`/${aboutPage.hero.image}`}
+          alt="Avatar Image"
+          fill
+          className="object-cover rounded-[24px]"
+          loading="eager"
+        />
+      </div>
     </div>
   );
 }

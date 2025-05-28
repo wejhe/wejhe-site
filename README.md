@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1 align="center">💻 Commercial Website [wejhe.co.id] 💻</h1>
 
-## Getting Started
+<br>
 
-First, run the development server:
+## Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+📂 This is a GitHub repository for my commercial portfolio website project
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🚀 The website is continuously deployed and hosted via `Vercel Platform`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🌐 The website is currently online and accessible at [wejhe.co.id](https://wejhe.co.id)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+<br>
 
-## Learn More
+## Technology Stack
 
-To learn more about Next.js, take a look at the following resources:
+<strong>🖥️ Frontend</strong>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Programming Language : `TypeScript`
+- Framework : `Next.js`
+- Styling : `Tailwind.css`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+<strong>💿 Backend</strong>
 
-## Deploy on Vercel
+- Programming Language : `TypeScript`
+- Framework : `Express.js`
+- API Architecture : `REST API`
+- Database : `PostgreSQL`
+- Authentication : `JSON Web Token`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<strong>♻️ CI/CD</strong>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Frontend Deployment : `Vercel - Serverless Deployment Platform`
+- Backend Deployment : `Render - Managed Cloud Platform`
+
+<br>
+
+## Feedback
+
+🏗️ This website is currently under development and I sincerely value all your feedback to help improve this website further
+
+📝 Feedback form is accessible at [wejhe.co.id/feedback](https://wejhe.co.id/feedback)

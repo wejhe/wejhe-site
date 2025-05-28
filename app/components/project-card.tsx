@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import Image from "next/image";
 
 export default function ProjectCard({
   heightClass,
@@ -18,10 +19,14 @@ export default function ProjectCard({
         heightClass
       )}
     >
-      <div
-        className="h-full rounded-t-[24px] bg-cover bg-center"
-        style={{ backgroundImage: `url(${projectImage})` }}
-      ></div>
+      <div className="relative h-full">
+        <Image
+          src={`/${projectImage}`}
+          alt="Project Image"
+          fill
+          className="object-cover rounded-t-[24px]"
+        />
+      </div>
       <div className="flex flex-col text-left justify-center gap-[4px] px-[32px] py-[24px] w-full">
         <strong className="text-white text-[24px] font-bold">
           {projectName}

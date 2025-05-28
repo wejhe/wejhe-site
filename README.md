@@ -37,6 +37,6 @@
 
 ## Feedback
 
-🏗️ This website is currently under development and I sincerely value all your feedback to help improve this website further
+🏗️ This website is currently under development and your feedbacks will help improve this website further
 
 📝 Feedback form is accessible at [wejhe.co.id/feedback](https://wejhe.co.id/feedback)

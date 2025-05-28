@@ -12,26 +12,34 @@ export const navbuttons: ButtonConfig[] = [
   { href: "/login", type: "primary", label: "Login" },
 ];
 
-export const heroStatuses = [
-  { icon: "globe.svg", label: "Jakarta, Indonesia" },
-  { icon: "aperture.svg", label: "Available for Projects" },
-];
-
-export const heroTitle = "I'm a Software Developer";
-
-export const heroSubtitle = (
-  <>
-    Crafting reliable, intuitive, and seamless{" "}
-    <strong className="text-white font-semibold">digital experiences</strong>{" "}
-    for everyone with the power of cutting-edge technologies and human-centric
-    design
-  </>
-);
-
-export const heroButton: ButtonConfig = {
-  href: "/consult",
-  type: "primary",
-  label: "Consult",
+export const landingPage = {
+  hero: {
+    statuses: [
+      { icon: "globe.svg", label: "Jakarta, Indonesia" },
+      { icon: "aperture.svg", label: "Available for Projects" },
+    ],
+    title: "I'm a Software Developer",
+    subtitle: (
+      <>
+        Crafting reliable, intuitive, and seamless{" "}
+        <strong className="text-white font-semibold">
+          digital experiences
+        </strong>{" "}
+        for everyone with the power of cutting-edge technologies and
+        human-centric design
+      </>
+    ),
+    ideaBox: {
+      icon: "idea.svg",
+      placeholder: "I want to build...",
+      button: {
+        href: "/consult",
+        type: "primary",
+        label: "Consult Idea",
+      } satisfies ButtonConfig,
+      hint: "Consult your idea to get started",
+    },
+  },
 };
 
 export const techStackTitle = "Technology Stack";

@@ -278,8 +278,6 @@ export const landingPage = {
   },
 };
 
-export const copyright = "2025 Wahyu Wijiyanto";
-
 export const aboutButtons: ButtonConfig[] = [
   { href: "/blog", type: "primary", label: "Download CV" },
   { href: "/contribute", type: "secondary", label: "Contact Me" },

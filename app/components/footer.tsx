@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { copyright } from "@/app/libs/ui-data";
+import { footer } from "@/app/libs/ui-data";
 
 export default function Footer() {
   return (
@@ -12,14 +12,14 @@ export default function Footer() {
           <span className="text-[24px] text-textual-gray font-extralight">
             ©
           </span>
-          <p className="text-[16px] text-textual-gray">{copyright}</p>
+          <p className="text-[16px] text-textual-gray">{footer.copyright}</p>
         </div>
         <Link
-          key="Privacy Policy"
-          href="/privacy-policy"
+          key={footer.menu.name}
+          href={footer.menu.href}
           className="text-[16px] text-textual-gray hover:text-link-blue"
         >
-          Privacy Policy
+          {footer.menu.name}
         </Link>
       </div>
     </footer>

@@ -22,6 +22,14 @@ export const navbar = {
     "This website is currently under development and I sincerely value all your feedback to help improve this website further",
 };
 
+export const footer = {
+  copyright: "2025 Wahyu Wijiyanto",
+  menu: {
+    name: "Privacy Policy",
+    href: "/privacy-policy",
+  },
+};
+
 export const landingPage = {
   hero: {
     statuses: [

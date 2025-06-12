@@ -55,12 +55,42 @@ export default function Page() {
 
       <div className="flex gap-[40px] items-center justify-center w-full px-body-padding-mobile lg:px-body-padding-desktop">
         <div className="flex flex-col gap-[40px] items-center justify-center w-full">
-          <div className="bg-red-500 flex px-[40px] py-[32px] rounded-[24px] w-full h-[800px]"></div>
-          <div className="bg-red-500 flex px-[40px] py-[32px] rounded-[24px] w-full h-[240px]"></div>
+          <div className="bg-black border border-stroke-gray flex px-[40px] py-[32px] rounded-[24px] w-full h-[800px]"></div>
+          <div className="relative bg-gradient-to-r from-gradient-purple-start to-gradient-purple-end border border-stroke-gray flex flex-col items-start justify-between px-[40px] py-[32px] rounded-[24px] w-full h-[240px]">
+            <strong className="text-white text-start text-[32px] font-bold">
+              Bank Syariah Indonesia
+            </strong>
+            <p className="text-white text-start text-[24px]">
+              Junior Programmer
+              <br />
+              IT Development Group
+            </p>
+            <Image
+              src="/work.png"
+              width={103}
+              height={240}
+              alt="Work"
+              className="absolute top-0 right-0"
+            />
+          </div>
         </div>
         <div className="flex flex-col gap-[40px] items-center justify-center w-full">
-          <div className="bg-red-500 flex px-[40px] py-[32px] rounded-[24px] w-full h-[240px]"></div>
-          <div className="bg-red-500 flex px-[40px] py-[32px] rounded-[24px] w-full h-[800px]"></div>
+          <div className="relative bg-block-gray border border-stroke-gray flex flex-col items-end justify-between px-[40px] py-[32px] rounded-[24px] w-full h-[240px]">
+            <strong className="text-white text-end text-[32px] font-bold">
+              Universitas Gadjah Mada
+            </strong>
+            <p className="text-textual-gray text-end text-[24px] w-[240px]">
+              Bachelor's Degree in Computer Science
+            </p>
+            <Image
+              src="/toga.png"
+              width={245}
+              height={240}
+              alt="Toga"
+              className="absolute top-0 left-0"
+            />
+          </div>
+          <div className="bg-black border border-stroke-gray flex px-[40px] py-[32px] rounded-[24px] w-full h-[800px]"></div>
         </div>
       </div>
     </div>
